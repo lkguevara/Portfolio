@@ -2,6 +2,14 @@
 font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Open Sans', sans-serif; */
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+
 body {
     background-color: #f8eeee;
     font-family: 'Source Sans Pro', sans-serif;  
@@ -13,19 +21,21 @@ header {
     background-color: #be4759;
     width: 100%;
     display: flex;    
-    height: 10vh;
+    height: 11vh;
     justify-content: space-between;
     align-items: center;   
     position: fixed; 
     bottom:auto;
     border-radius: 13px 13px 0 0;;
+    flex-wrap: wrap;
 }
 
 .menu {
     height: inherit;
     display: flex;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
+    flex:1;   
 }
 ul {
     list-style: none; 
@@ -34,20 +44,23 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* height: inherit;  */
+    width: 100%;   
+    
 }
 
 li {
-    height: inherit;
-    /* display: flex;
-    margin: 20px; */
-   
+    height: inherit;    
+       
 }
 
 header ul li img {
-    margin: 0px 50px;
-    padding: 0px 30px;
+    margin: px 20px;
+    padding: 4px 10px;
+    display: block;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .link{
@@ -57,21 +70,19 @@ header ul li img {
     display: flex;
     height: inherit;
     align-items: center;
-    margin: 0px 60px;
-    padding: 0px 10px;
+    margin: 0px 20px;
+    padding: 0px 10px;    
+    width: auto;
 }
 
 h1 {
     font-family: 'Fjalla One', sans-serif;
     line-height: 2em; 
     font-size: 30px;
-    font-weight: 500;
-    /* font-style: normal; */
+    font-weight: 500;   
     letter-spacing: -.2px;
     text-transform: none;
-    margin: 0px;
-    
-    
+    margin: 0px;    
 }
 
 .main {
@@ -81,16 +92,14 @@ h1 {
     justify-content: center;
     align-items: center; 
     padding: 200px 0 185px 0;
-    margin: 0px 0 50px 0;
-     
-    
+    margin: 0px 0 50px 0; 
+    /* flex-wrap: wrap;    */
 }
 
 .main-container h1{
     width: 100%;
     font-size: 4rem;
-    line-height: 100px;
-    
+    line-height: 100px;    
 }
 
 .main-text{
@@ -120,6 +129,7 @@ h1 {
 .about-name {
     display: flex;
     align-items: center;
+    
 }
 
 .about-name figure img {
@@ -134,6 +144,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     height: 100px;
+    
     
 }
 
@@ -154,12 +165,9 @@ h1 {
     color: white;
 }
 
-
-
 .name-description h2 {
     padding: 0; 
     font-size: 2rem;
-
 }
 
 .country-title{
@@ -168,8 +176,7 @@ h1 {
 
 .country-description {
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 .country-description img {
@@ -181,7 +188,6 @@ h1 {
     margin: 0 30px 10px 50px;
     font-size: 1.4rem;
     text-align: justify;
-
 } 
 
 .redes {
@@ -190,6 +196,7 @@ h1 {
     align-items: center;
     margin: 30px;
     padding: 20px;
+    flex-wrap: wrap;
         
 }
 
@@ -213,10 +220,9 @@ h1 {
 }
 
 .container-studies {
-    display:flex;
+    display:flex;   
     justify-content: space-around;
-    
-    
+    flex-wrap: wrap;    
     
 }
 
@@ -253,7 +259,7 @@ h1 {
 .container-hability {
     display:flex;
     justify-content: space-around;
-    
+    flex-wrap: wrap;    
 }
 
 .container-hability-text {
@@ -262,6 +268,7 @@ h1 {
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.3rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 h2 {
@@ -300,6 +307,7 @@ h2 {
     margin: 0px 70px 0 150px;    
     background-color: rgb(250, 228, 253);
     width: 70%;
+    flex-wrap: wrap;
 }
 .project-date {
     font-family: 'Fjalla One', sans-serif; 
@@ -385,6 +393,7 @@ h4 {
     display: flex;   
     justify-content: center; 
     width: 70%;
+    flex-wrap: wrap;
     
 }
 
@@ -421,7 +430,8 @@ h4 {
 }
 
 .contact-formulary {      
-    display: flex;         
+    display: flex; 
+    flex-wrap: wrap;        
 }
 
 .email{
@@ -457,10 +467,7 @@ h4 {
 
 .envio-email a img {
     margin: 0px 0 0 15px;
-    border-radius: 5px;
-    /* width: 30px; */
-    /* height: 30px; */   
-    
+    border-radius: 5px;     
 }
 
 .footer {
@@ -468,18 +475,56 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;        
+    padding: 10px 30px;   
+    flex-wrap: wrap;     
 }  
 
 .footer-detail {
     display:flex;
     justify-content: space-between;
     font-size: 1em;
+    flex-wrap: wrap;
         
 }
 
 .footer img {
     height: 30px;
     margin: 10px;
+}
+
+@media screen and (max-width:1024px){
+    
+}
+
+@media screen and (max-width:767px){
+    header{
+        height: auto;
+        display: block;
+    }
+
+    ul{
+        display: block;
+        
+    }
+
+    .link{
+        justify-content: center;
+        margin: 0px 0px;
+        padding: 10px 0px;    
+    }
+
+    .link:hover{
+        background-color: #a32437;
+    }
+
+  
+}
+
+@media screen and (max-width:480px){
+    
+}
+
+@media screen and (max-width:320px){
+    
 }
 

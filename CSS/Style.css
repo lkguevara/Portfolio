@@ -721,7 +721,7 @@ ul {
         display: flex;
         justify-content: center;
         position: fixed;  
-        top:10px;
+        top:15px;
         height: 40px;
         align-items: center;
         color: white;
@@ -774,6 +774,7 @@ ul {
 
     .main img{
         width: 480px;
+        height: 530px;
     }
 
 
@@ -816,7 +817,7 @@ ul {
         padding: 0 1.5em 0.5em 1.5em;
         margin: auto;
         width: 60%;
-        height: 240px;
+        height: auto;
     }
 
     .button-description a{
@@ -825,9 +826,17 @@ ul {
         text-decoration: none;
     }
 
+    .button-description{
+        position: absolute;
+        right: 200px;
+    }
+
     .button{
         box-shadow: 0px 0px 1px black;
-        font-family: 'Source Sans Pro', sans-serif;        
+        font-family: 'Source Sans Pro', sans-serif; 
+        margin: 0;
+         
+        
     }
 
     .redes{
@@ -889,7 +898,7 @@ ul {
     .project-left{
         font-size: 14px;
         margin: auto;
-        height: 230px;
+        height: auto;
         padding: 15px;
     }
 
@@ -915,7 +924,7 @@ ul {
     .experience-down{
         font-size: 14px;
         margin: auto;
-        height: 100px;
+        height: auto;
         padding: 15px;
     }
 
@@ -974,12 +983,281 @@ ul {
     }  
 }
 
+/* ****************************400*************************** */
+
+@media screen and (max-width:400px){
+    
+    .link{
+        justify-content: center;
+        margin: 15px 10px;
+        padding: 15px 10px;    
+    }
+
+    .link:hover{
+        color: #059931; 
+        cursor: pointer; 
+     }
+
+     .main img{
+        width: 400px;
+        height: 550px;
+    }
+
+    .main-container h1{
+        font-size: 40px;
+        position: absolute;
+        top: -80px;
+    }
+
+    .main-text{
+        font-size: 30px;
+        position: relative;
+        top: 60px;        
+    }
+
+
+    .about-title h1 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+        
+    }
+
+    .about-name{
+        width: 100%;
+        margin: 0;
+    }
+
+    .about-name figure{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-name figure img{
+        width: 90px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .name-description{
+        width: 100%;
+    }
+
+    .name-description h2 {
+        font-size: 1.15em; 
+        padding: 5px;
+        text-align: center;     
+    }
+
+    .country-description {
+        display: block;
+        font-size: 1em;
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .about-description p {
+        font-size: 16px;
+        padding: 10px;
+        margin: auto;
+        width: 70%;
+        height: auto;
+    }
+
+    .button-description a{
+        font-size: 0.8em;
+        padding: 8px;
+        text-decoration: none;
+        position: absolute;
+        left: 40px;
+    }
+
+    .button{
+        box-shadow: 0px 0px 1px black;
+        font-family: 'Source Sans Pro', sans-serif;   
+        width: 80px;     
+    }
+
+    .redes{
+        margin-top: 80px;
+    }
+    .redes a img{
+        width: 50px;
+    }
+
+    .studies h2 {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .study-text{
+        font-size: 15px;
+        margin: auto;
+        width: 60%;
+        
+    }
+
+    .container-studies img {
+        width: 40px;
+        height: 20%;
+    }
+    
+    .container-studies-text p{
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .hability h2 {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+        padding: 20 0;
+        width: 100%;    
+    }
+
+    .hability-text {
+        font-size: 16px;
+        margin: auto;
+        width: 60%;
+    }
+
+    .container-hability img{
+        width: 40px;
+    }
+
+    .container-hability-text p{
+        font-size: 16px;
+    }
+
+    .projects h2 {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px; 
+        margin-top: 20px;
+
+    }
+
+    .project-left{
+        font-size: 15px;
+        width: 70%;
+        height: 250px;
+        padding: 15px;
+    }
+
+
+    .experiencia{
+        padding: 0;
+        margin: 0;
+    }
+
+    .experiences h2{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px; 
+        margin-top: 20px;
+        padding-top: 80px;
+    }
+
+    .experience-down{
+        font-size: 15px;
+        width: 70%;
+        height: 150px;
+        margin-left: 50px;  
+    }
+
+    .experience-down h3{
+        margin: 0;
+    }
+
+    .contact h2{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .contact-formulary{
+        width: 100%;
+        margin: 0;
+        padding: 0 0% 4% 1.5%;  
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .email{
+        width: 39%;
+        height: 20px;
+        font-size: 1em;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 1em;
+        margin-top: 30px;
+   }
+
+    .envio-email{
+        width: 35%;
+        height: auto;
+        font-size: 1em;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 1em; 
+        display: flex;
+        text-align: center;
+        padding: 1.2%;
+    }
+
+    .envio-email a {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .envio-email a img{
+        margin: auto;
+        padding: auto;
+    }
+
+    .footer{
+        height: 80px;
+        background-color: #a32437;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }  
+
+    .footer p{
+        margin: 0;
+    }
+
+    .footer-detail p{
+        margin: 10px 0 0 0;
+        align-items: center;
+    }
+
+}
+    
+
 /* ****************************320*************************** */
 
 @media screen and (max-width:320px){
     
     .menu{
         height: 110vh;
+    }
+
+    .hamburguer img{
+        position: fixed;
+        top: 30px;
     }
     .link{
         justify-content: center;

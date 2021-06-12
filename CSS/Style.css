@@ -18,6 +18,8 @@ header {
     align-items: center;       
     flex-wrap: wrap;
     position: fixed;
+    border-bottom: solid 1px white;
+    z-index: 10;
 }
 
 .hamburguer img{
@@ -43,11 +45,16 @@ ul {
     list-style: none;  
 }
 
+a.link {
+    font-size: 25px;
+    margin:0;
+}
+
 .link{
     color: white;
     text-decoration: none;
     font-size: 22px;   
-    align-items: center;     
+    align-items: center;    
     
 }
 
@@ -57,11 +64,13 @@ ul {
     justify-content: center;
     align-items: center; 
     flex-wrap: wrap; 
+    height: calc(100vh);
 }
 
 .main img{
-    width: 1350px;
-    height: 600px;
+    width: calc(100%);
+    height: calc(100%);
+    
 }
 
 .main-container{
@@ -79,6 +88,7 @@ ul {
     margin: auto; 
     text-align: center; 
     color: rgb(255, 255, 255);  
+    
 }
 
 .main-text{
@@ -96,51 +106,55 @@ ul {
     margin: 10px 0;
 }
 
+.about-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
 .about-title h1{
-    padding: 80px 0 0 20px;
-    margin:40px 60px;
-    font-size: 40px;
+    font-size: 45px;
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
     text-align: left;
     color: white;    
-    
+    border-bottom: solid 3px #0077B7;
+    width: calc(20%);
+    text-align: center;
 }
 
 .about-name {
-    width: 100%;
-    display: flex;
+    width: calc(100%);
     align-items: center;
     flex-wrap: wrap;
     
 }
 
 .about-name figure {
-    margin: 0 100px;
+    display: flex;
+    justify-content: center;
 }
 .about-name figure img {
     border-radius: 50%;
-    height: 150px;
-    padding: 10%;
+    height: 150px;    
 }
 
 .name-description {
-    margin-left: 0px;
+    text-align: center;
     flex-wrap: wrap;
 }
 
 .name-description h2 {
-    padding: 0; 
     font-size: 30px;
     flex-wrap: wrap;
+    display: flex;
     justify-content: center;
-    color: white;
-    margin: 0;
+    color: white;    
+    margin-bottom: 0;
 }
 
 .country-description {
     display: flex;
-    align-items: center;     
+    justify-content: center;     
 }
 
 .country-title{
@@ -148,6 +162,7 @@ ul {
     padding: 0;
     justify-content: left;
     color: white;
+    margin-bottom: 40px;
 }   
 
 .country-description img {
@@ -160,7 +175,7 @@ ul {
     font-size: 23px;
     text-align: justify;
     color: white;
-    margin: 0 100px;
+    width: calc(50%);
 } 
 
 .button-description {
@@ -176,7 +191,8 @@ ul {
     border-radius: 10px 10px; 
     box-shadow: 0px 0px 5px black;
     padding: 10px;   
-    margin: 0px 100px;    
+    position: relative;  
+    right: 25%;
     background-color: #0077B7;
     width: 100px;
     color: white;
@@ -185,175 +201,208 @@ ul {
 .redes{
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 
 }
 
 .redes a img {
     align-items: center;    
-    padding: 20px;
     flex-wrap: wrap; 
-    width: 70px;     
-     
+    width: 50px; 
+    height: 50px;
 }
 
-.studies h2 {
-    font-size: 40px;
-    font-family: 'Fjalla One', sans-serif;
-    text-transform: uppercase;
-    text-align: left;
-    color: white;
-    margin: 0 150px;
-    padding: 3%;
+a.linkedin{
+    border-bottom: 20px;
+    border: 3px solid #0077B7; 
+    border-radius: 10%;
+    height: 50px;
 }
 
-.study-text {
-    margin: 20px 200px;
-    padding: 20px;
-    font-size: 1.3rem;
-    text-align: justify; 
-    border-radius: 10px 10px; 
-    box-shadow: 0px 0px 5px black;
-    color: white;
+a.git{
+    margin-right: 40px;
+    border: 3px solid #0077B7;  
+    border-radius: 50%; 
+    height: 50px;
 }
 
-.container-studies {
-    display: flex;
-    justify-content: center; 
+a.whatsapp{
+    margin-left: 40px;   
 }
 
-.container-studies img{
-    width: 60px;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.container-studies-text {
-    display:flex;
-    justify-content: center;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 20px;
-    align-items: center;
-    color: white;
-}
-
-.container-studies-text p{
-    padding: 0 20px;
-    margin: 0 10px;
-}
 
 .hability h2 {
-    font-size: 40px;
+    font-size: 45px;
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
-    text-align: left;
     color: white;
-    margin: 40px 0 0 190px;
+    border-bottom: solid 3px #0077B7;
+    width: 16%;   
+    padding-top: 80px; 
+    margin-left: 150px;
+    margin-bottom: 150px;
     
 }
 
-.hability-text {
-    margin: 60px 200px;
-    padding: 20px;
-    font-size: 1.3rem;
-    text-align: justify; 
-    border-radius: 10px 10px; 
-    box-shadow: 0px 0px 5px black;
-    color: white;
-}
-
-.container-hability {
+.container-hability{
     display: flex;
     justify-content: center; 
-}
-
-.container-hability img{
-    width: 60px;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.container-hability-text {
-    display:flex;
-    justify-content: center;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 20px;
+    color: white;
+    padding: 75px 0;
     align-items: center;
-    color: white;    
-}
-
-.container-hability-text p{
-    padding: 0 20px;
-    margin: 0 10px;
-}
-
-.projects {
-    margin: auto;
-    padding: 5%;
-    text-align: justify;
-}
-.projects h2 {
-    font-size: 40px;
-    font-family: 'Fjalla One', sans-serif;
-    text-transform: uppercase;
-    text-align: left;
-    color: white;
-    margin: auto;
-    padding: 1%; 
-}
-
-.project-left{
-    margin: 60px 200px;
-    padding: 20px;
-    font-size: 1.3rem;
-    text-align: justify; 
-    border-radius: 10px 10px; 
-    box-shadow: 0px 0px 5px black;
-    color: white;
-    background-color: #0077b765;
-}
-
-.experience {
-    margin: 1%;
-    padding: 2%;
-    font-size: 20px;
-    text-align: justify;
-    border-radius: 10px 10px;
-    box-shadow: 0px 0px 5px black;
-    align-items: center;        
-    display: flex;
-    height: auto;
     flex-wrap: wrap;
 }
 
-
-.experiences {
-    width: 90%;
-    margin:0;
-    padding: 5%;    
+.container-hability a{
+    width: calc(10%);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    background-color: black;
+    border-radius: 15px;
+    border: 1px solid white;
+    cursor: pointer;
 }
 
-.experiences h2 {
-    font-size: 40px;
+.container-hability a:hover{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container-hability a img{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.projects{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.projects h2{
+    font-size: 45px;
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
-    text-align: justify;
     color: white;
-    padding: 0px 2%;
+    border-bottom: solid 3px #0077B7;
+    width: 16%;   
+    padding-top: 80px; 
+    margin-left: 150px;
+    margin-top: 80px;
 }
 
-.experience-down{
-    margin: 60px 200px;
-    padding: 20px;
-    font-size: 1.3rem;
-    text-align: justify; 
-    border-radius: 10px 10px; 
-    box-shadow: 0px 0px 5px black;
-    color: white;
-    background-color: #0077b765;
+.Container_Projects{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
 }
 
+.project_1{
+    width: calc(20%);
+    padding: 5px;
+    border-radius: 30px;
+    background-color: black;
+}
+
+.content-img{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.content-img img{
+    width: calc(100%);   
+    border-radius: 20px;
+    height: 200px;
+}
+
+.Portafolio{
+    margin: 0 10px;
+}
+
+.Portafolio h3{
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+.Portafolio p{
+    font-size: 18px;
+    color: white;
+    padding: 20px 0;
+}
+
+
+.project_2{
+    width: calc(20%);
+    padding: 10px;
+    border-radius: 30px;
+    background-color: black;
+}
+
+.content-img2 img{
+    width: calc(100%);
+    border-radius: 20px;
+    height: 180px;
+}
+
+.content-img2{
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.Store{
+    margin: 0 10px;
+}
+
+.Store h3{
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+.Store h4{
+    font-size: 20px;
+    color: white;
+}
+
+.Store p{
+    font-size: 18px;
+    color: white;
+}
+
+.See{
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid white;
+        
+}
+
+.See a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;   
+    font-weight: 1000;
+    padding: 0 30px;
+    align-items: center;
+}
+
+.See a:hover{
+    border-radius: 100px;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
 
 .contact {
     padding: 0;  
@@ -361,25 +410,24 @@ ul {
 }
 
 .contact h2 {
-    font-size: 40px;
+    font-size: 45px;
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
-    text-align: justify;
     color: white;
-    margin: 0;
-    padding: 3% 6%;
+    border-bottom: solid 3px #0077B7;
+    width: 16%;   
+    margin-left:150px;
+    
 }
 
 .contact-formulary {      
     display: flex; 
     justify-content: center;
-    margin-bottom: 70px;
-    
-           
+    margin-bottom: 70px;    
 }
 
 .email{
-    background-color: #0077b765;
+    background-color: black;
     padding: 12px 20px;
     border: 2px solid rgb(172, 172, 230);
     border-radius: 15px 0px 0px 15px;
@@ -395,7 +443,7 @@ ul {
 }
 
 .envio-email {
-    background-color: #0077b765;
+    background-color: black;
     padding: 12px 20px;
     border: 2px solid rgb(172, 172, 230);
     border-radius: 0px 15px 20px 0px;
@@ -439,31 +487,15 @@ ul {
 }
 
 
-/* ************MEDIA QUERIES******************************* */
-/* ****************************1024*************************** */
+/* ********************************************************MEDIA QUERIES*********************************************************************/
+/* ***************************************************************1024***********************************************************************/
 @media screen and (max-width:1024px){
-    .header {
-        width: 100%;
-        height: 1.2em;
-        margin-bottom: 10px;
-    }
-
-    .container_menu ul{
-        width: 80%;
-    }
-    .link{
+    .menu ul li a{
+        font-size: 20px;
         font-family: 'Hammersmith One', sans-serif;
-        margin: 10px;
-        padding: 5px;   
-        font-size: 18px; 
-        color:white;
-        width: 100%;
         display: flex;
         justify-content: center;
-    }
-
-    .main img{
-        height: 500px;
+        padding: 5px;
     }
 
     .about-description p {
@@ -471,54 +503,18 @@ ul {
         padding: 1% 3%;
     }
 
+    .main-container h1{
+        font-size: 60px;
+    }
+
     .button{
-        margin: 0 130px;
+        margin: 0 10px;
+    }   
+
+    .hability h2{
+        margin-bottom: 100px;
     }
     
-    .studies h2 {
-        font-size: 2em;
-    }
-
-    .study-text{
-        font-size: 1.2em;
-    }
-
-   
-    .hability h2 {
-        font-size: 32px;    
-    }
-
-    .hability-text{
-        padding: 1.5em;
-        font-size: 20px;
-    }
-
-    .projects h2{
-        margin: 0 30px;
-        padding: 30px 0 0 2%;
-    }
-    .project-left{
-        font-size: 20px;
-        margin-bottom: 0;
-        padding-bottom: 10px;
-    }
-
-    .experiences{
-        padding-top: 0;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-
-    .experiences h2{
-        margin: 0 30px;
-        padding: 80px 0 0 2%;
-    }
-
-
-    .experience-down{
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
 
     .contact-formulary{
         width: 100%;
@@ -532,189 +528,80 @@ ul {
     }
 }
 
-
-/* ****************************767*************************** */
-@media screen and (max-width:767px){
-   
-    .container_menu ul{
-        width: 80%;
-    }
-    .link{
-        font-family: 'Hammersmith One', sans-serif;
-        margin: 10px;
-        padding: 5px;   
-        font-size: 18px; 
-        color:white;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+/* ***************************************************************950***********************************************************************/
+@media screen and (max-width:950px){
+    .container-hability a{
+        width: calc(10%);
     }
 
-    .main img{
-        width: 767px;
+    .project_1{
+        width: calc(30%);       
     }
 
-
-    .main-container h1{
-        font-size: 50px;
-    }
-
-
-    .about-title h1 {
-        font-size: 30px;
-        padding: 80px 0 0 1em;
-    }
-
-    .about-name figure {
-        margin: 0 10px 0 100px;    
-    }
-
-    .about-name figure img{
-        width: 90px;
-        height: 100px;
-    }
-
-    .name-description h2 {
-        font-size: 1.15em; 
-        padding: 5px;         
-    }
-
-    .country-title {
-        font-size: 1em;
-        padding: 5px;
-    }
-
-    .about-description p {
-        font-size: 16px;
-        padding: 0 1.5em 0.5em 1.5em;
-        height: 130px;
-        margin-top: 20px;
-    }
-
-    .button-description a{
-        font-size: 0.8em;
-        padding: 9px;
-        text-decoration: none;
+    .project_2{
+        width: calc(30%);       
     }
 
     .button{
-        box-shadow: 0px 0px 1px black;
-        font-family: 'Source Sans Pro', sans-serif;        
-    }
-
-    .redes a img{
-        width: 50px;
-    }
-
-    .studies h2 {
-        font-size: 24px;
-    }
-
-    .study-text{
         font-size: 16px;
-        width: 350px;
+        width: 90px;
     }
-
-    .container-studies img {
-        width: 40px;
-        height: 20%;
-    }
-    
-    .container-studies-text p{
-        font-size: 18px;
-        padding: 10px;
-    }
-
-    .hability h2 {
-        font-size: 24px;
-        margin-left: 170px;        
-    }
-
-    .hability-text {
-        font-size: 16px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .projects h2 {
-        font-size: 30px;
-        margin-left: 75px;  
-    }
-
-    .project-left{
-        width: 50%;
-        font-size: 16px;
-    }
-
-
-    .experience{
-        margin: 1em;   
-        display: flex;   
-        justify-content: space-between;         
-    }
-
-    .experiences h2 {
-        font-size: 30px;
-        margin-left: 75px;  
-    }
-
-    .experience-down{
-        width: 50%;
-        font-size: 16px
-    }
-
-    .contact h2{
-        font-size: 30px;
-        margin-left: 75px;
-    }
-
-    .contact-formulary{
-        width: 96.2%;
-        margin: 0;
-        padding: 0 0% 4% 1.5%;  
-        text-align: center;
-    }
-
-    .email{
-        width: 29%;
-        height: auto;
-        font-size: 1em;
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
-        border-radius: 1em;
-   }
 
     .envio-email{
-        width: 32%;
-        height: auto;
-        font-size: 1em;
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
-        border-radius: 1em; 
-        display: flex;
-        text-align: center;
-        padding: 1.2%;
-    }
-
-    .envio-email a {
-        margin-top: auto;
-        margin-bottom: auto;
+        padding: 12px 0 12px 5px;
+        font-size: 15.5px;
     }
 
     .envio-email a img{
-        margin: auto;
-        padding: auto;
+        margin-left: 3px;
     }
-
-    .footer{
-        width: 100%;
-        height: 45px;
-        background-color: #a32437;
-        display: flex;
-        justify-content: space-around;
-        padding: 0;
-    }  
 }
 
-/* ****************************480*************************** */
+/* ***************************************************************767***********************************************************************/
+@media screen and (max-width:767px){
+    .main-container h1{
+        font-size: 50px;
+    }
+    
+    .about-title{
+        padding-top: 45px;
+    }
+
+    .about-title h1{
+        width: calc(30%);
+        font-size: 35px;
+    }
+
+    .button{
+        font-size: 15px;
+        width: 70px;
+    }
+
+    .redes{
+        margin-top: 80px;
+    }
+
+    .hability h2{
+        font-size: 35px;
+        width: 30%;
+    }
+
+    .container-hability{
+        margin: 0 120px;        
+    }
+
+    .container-hability a{
+        width: 18%;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .projects h2{
+        font-size: 35px;
+        width: 25%;
+    }
+}
+/* ***************************************************************480***********************************************************************/
 @media screen and (max-width:480px){
      
     .hamburguer img{
@@ -735,7 +622,7 @@ ul {
     .menu{
         display: block;
         position: fixed;   
-        left: -100vh;  
+        left: 0;  
         top: 0px;     
         width: 50%;
         margin: 0;
@@ -746,55 +633,27 @@ ul {
         background: #000000;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-             
     }  
 
     .menu ul{
-        padding: 20px 40px;
-        margin: 30px 20px;  
+        padding: 40px 40px;
     }
 
     .link:hover{
-       color: #059931; 
+       color: #0077B7; 
        cursor: pointer; 
     }
 
-    .link{
-        justify-content: center;
-        margin: 15px 10px;
-        padding: 15px 10px;  
-        font-size: 20px; 
+    .menu ul li a{
+        margin: 25px 0;
+        padding: 10px;
     }
-    
     .menu_active{
-        left: 0;
-        
+        left: -100vh;
     }
-
-    .main img{
-        width: 480px;
-        height: 530px;
-    }
-
-
-    .main-container h1{
-        font-size: 50px;
-    }
-
 
     .about-title h1 {
         font-size: 30px;
-        padding: 80px 0 0 1em;
-        
-    }
-
-    .about-name{
-        margin-bottom: 30px;
-    }
-
-    .about-name figure {
-        margin: 0 10px 0 100px;    
     }
 
     .about-name figure img{
@@ -813,7 +672,7 @@ ul {
     }
 
     .about-description p {
-        font-size: 16px;
+        font-size: 15px;
         padding: 0 1.5em 0.5em 1.5em;
         margin: auto;
         width: 60%;
@@ -821,126 +680,95 @@ ul {
     }
 
     .button-description a{
-        font-size: 0.8em;
-        padding: 9px;
-        text-decoration: none;
-    }
-
-    .button-description{
-        position: absolute;
-        right: 200px;
-    }
-
-    .button{
-        box-shadow: 0px 0px 1px black;
-        font-family: 'Source Sans Pro', sans-serif; 
-        margin: 0;
-         
-        
-    }
-
-    .redes{
-        margin-top: 40px;
-    }
-    .redes a img{
-        width: 50px;
-    }
-
-    .studies h2 {
-        font-size: 24px;
-    }
-
-    .study-text{
-        font-size: 14px;
-        margin: auto;
-        width: 50%;
-        
-    }
-
-    .container-studies img {
-        width: 40px;
-        height: 20%;
+        font-size: 13px; 
+        padding: 8px;       
     }
     
-    .container-studies-text p{
-        font-size: 16px;
-        padding: 10px;
+    .redes a img {
+        width: 40px; 
+        height: 40px;
+    }
+
+    a.linkedin{
+        height: 40px;
+    }
+    
+    a.git{
+        height: 40px;
+    }
+    
+    .hability{
+        margin: 0;
     }
 
     .hability h2 {
-        font-size: 24px;
-        margin-left: 170px;   
-        margin-bottom: 30px;     
+        font-size: 35px;
+        margin: 0 0 0 50px;
     }
 
-    .hability-text {
-        font-size: 16px;
-        font-size: 16px;
-        margin: auto;
-        width: 50%;
+    .container-hability{
+        margin: 0;
     }
 
-    .container-hability img{
-        width: 40px;
+    .container-hability a{
+        width: 20%;
     }
 
-    .container-hability-text p{
-        font-size: 16px;
+    .Container_Projects{
+        margin: 30px;
     }
 
     .projects h2 {
-        font-size: 30px;
-        margin-left: 15px; 
-        margin-bottom: 30px; 
-        margin-top: 20px;
+        font-size: 35px;
+        margin: 0 0 0 50px;
     }
 
-    .project-left{
-        font-size: 14px;
-        margin: auto;
-        height: auto;
-        padding: 15px;
+    .project_1{
+        width: calc(45%);
+        margin: 10px 40px;
     }
 
-
-    .experience{
-        display: flex;   
-        justify-content: space-between;         
+    .Portafolio h3{
+        font-size: 20px;
     }
 
-    .experiences{
+    .Portafolio p{
+        font-size: 15px;
+        text-align: justify;
+        margin: 0;
         padding: 0;
+    }
+
+    .project_2{
+        width: calc(45%);
+        margin: 10px 40px;
+    }
+
+    .Store h3{
+        font-size: 20px;
+    }
+
+    .Store p{
+        font-size: 15px;
+        text-align: justify;
         margin: 0;
+        padding: 0;
     }
 
-    .experiences h2{
-        font-size: 30px;
-        margin-left: 35px;
-        padding: 40px 0 20px 0;
-        
-       
+    .See a{
+        font-size: 15px;
     }
 
-    .experience-down{
-        font-size: 14px;
-        margin: auto;
-        height: auto;
-        padding: 15px;
-    }
 
-    .experience-down h3{
-        margin: 0;
-    }
-
-    .contact h2{
-        font-size: 30px;
-        margin-left: 45px;
-        padding: 40px 0 20px 0;
+    .contact h2 {
+        font-size: 35px;
+        margin: 0 0 41px 50px;
+        width: 30%;
     }
 
     .contact-formulary{
         width: 100%;
-        margin: 0;
+        margin: 0 0 40px 0;
         padding: 0 0% 4% 1.5%;  
         text-align: center;
     }
@@ -982,27 +810,9 @@ ul {
         padding: 0;
     }  
 }
-
-/* ****************************400*************************** */
+/* ***************************************************************400***********************************************************************/
 
 @media screen and (max-width:400px){
-    
-    .link{
-        justify-content: center;
-        margin: 15px 10px;
-        padding: 15px 10px;    
-    }
-
-    .link:hover{
-        color: #059931; 
-        cursor: pointer; 
-     }
-
-     .main img{
-        width: 400px;
-        height: 550px;
-    }
-
     .main-container h1{
         font-size: 40px;
         position: absolute;
@@ -1015,179 +825,63 @@ ul {
         top: 60px;        
     }
 
-
-    .about-title h1 {
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 10px;
-        
-    }
-
-    .about-name{
-        width: 100%;
-        margin: 0;
-    }
-
-    .about-name figure{
-        margin: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .about-name figure img{
-        width: 90px;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
-
-    .name-description{
-        width: 100%;
-    }
-
-    .name-description h2 {
-        font-size: 1.15em; 
-        padding: 5px;
-        text-align: center;     
-    }
-
-    .country-description {
-        display: block;
-        font-size: 1em;
-        padding: 5px;
-        width: 100%;
-        text-align: center;
-        
-    }
-
-    .about-description p {
-        font-size: 16px;
-        padding: 10px;
-        margin: auto;
-        width: 70%;
-        height: auto;
-    }
-
     .button-description a{
-        font-size: 0.8em;
-        padding: 8px;
-        text-decoration: none;
-        position: absolute;
-        left: 40px;
+        font-size: 12px;
     }
 
-    .button{
-        box-shadow: 0px 0px 1px black;
-        font-family: 'Source Sans Pro', sans-serif;   
-        width: 80px;     
+    .hability h2{
+        font-size: 30px;
+        width: 40%;
     }
 
-    .redes{
-        margin-top: 80px;
-    }
-    .redes a img{
-        width: 50px;
+    .container-hability{
+        margin-left: 15px;
     }
 
-    .studies h2 {
-        font-size: 24px;
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-        padding: 0;
-        width: 100%;
+    .container-hability a{
+        width: calc(18%);
+        height: auto+0.3;
     }
 
-    .study-text{
-        font-size: 15px;
-        margin: auto;
-        width: 60%;
+
+    .container-hability a img{
+        width: 25px;
         
-    }
-
-    .container-studies img {
-        width: 40px;
-        height: 20%;
-    }
+    }   
     
-    .container-studies-text p{
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    .hability h2 {
-        font-size: 24px;
-        display: flex;
-        justify-content: center;
-        margin: 30px 0;
-        padding: 20 0;
-        width: 100%;    
-    }
-
-    .hability-text {
-        font-size: 16px;
-        margin: auto;
-        width: 60%;
-    }
-
-    .container-hability img{
-        width: 40px;
-    }
-
-    .container-hability-text p{
-        font-size: 16px;
-    }
-
-    .projects h2 {
+    .projects h2{
         font-size: 30px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px; 
-        margin-top: 20px;
-
-    }
-
-    .project-left{
-        font-size: 15px;
-        width: 70%;
-        height: 250px;
-        padding: 15px;
-    }
-
-
-    .experiencia{
-        padding: 0;
-        margin: 0;
-    }
-
-    .experiences h2{
-        font-size: 30px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px; 
-        margin-top: 20px;
-        padding-top: 80px;
-    }
-
-    .experience-down{
-        font-size: 15px;
-        width: 70%;
-        height: 150px;
-        margin-left: 50px;  
-    }
-
-    .experience-down h3{
-        margin: 0;
+        width: 35%;
     }
 
     .contact h2{
         font-size: 30px;
-        display: flex;
-        justify-content: center;
-        margin: 0;
+        width: 35%;
     }
+
+    .project_1{
+        width: calc(60%);
+    }
+
+    .project_2{
+        width: calc(60%);
+    }  
+
+    .Portafolio h3{
+        font-size: 15px;
+    }
+
+    .Portafolio p{
+        font-size: 13px;
+    }
+
+    .Store h3{
+        font-size: 15px;
+    }
+
+    .Store p{
+        font-size: 13px;
+    }    
 
     .contact-formulary{
         width: 100%;
@@ -1215,6 +909,7 @@ ul {
         display: flex;
         text-align: center;
         padding: 1.2%;
+        margin-left: 10px;
     }
 
     .envio-email a {
@@ -1246,86 +941,31 @@ ul {
 
 }
     
-
-/* ****************************320*************************** */
+/* ***************************************************************320***********************************************************************/
 
 @media screen and (max-width:320px){
     
-    .menu{
-        height: 110vh;
-    }
+   .menu ul li a{
+       font-size: 15px;
+   }
 
-    .hamburguer img{
-        position: fixed;
-        top: 30px;
-    }
-    .link{
-        justify-content: center;
-        margin: 20px 10px;
-        padding: 25px 10px;    
-    }
-
-    .link:hover{
-        color: #059931; 
-        cursor: pointer; 
-     }
-
-     .main img{
-        width: 320px;
-    }
-
-
-    .main-container h1{
+   .main-container h1{
         font-size: 40px;
         position: absolute;
         top: -80px;
     }
 
-    .main-text{
-        font-size: 30px;
-        position: relative;
-        top: 60px;        
-    }
-
-
-    .about-title h1 {
-        font-size: 30px;
-        padding: 80px 0 0 1em;
-        margin-bottom: 10px;
-        
-    }
-
-    .about-name{
-        width: 320px;
-        display: block;
-    }
-
-    .about-name figure img{
-        width: 90px;
-        height: auto;
-    }
-
-    .name-description h2 {
-        font-size: 1.15em; 
-        padding: 5px;
-        text-align: center;     
-    }
-
-    .country-description {
-        display: block;
-        font-size: 1em;
-        padding: 5px;
-        width: 100%;
-        text-align: center;
-        
-    }
 
     .about-description p {
-        font-size: 16px;
+        font-size: 14px;
         padding: 10px;
         margin: auto;
         width: 70%;
-        height: 300px;
+        
+    }
+
+    .about-title h1{
+        width: 45%;
     }
 
     .button-description a{
@@ -1342,110 +982,17 @@ ul {
         width: 80px;     
     }
 
-    .redes{
-        margin-top: 80px;
-    }
-    .redes a img{
-        width: 50px;
-    }
-
-    .studies h2 {
-        font-size: 24px;
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-        padding: 0;
-        width: 100%;
-    }
-
-    .study-text{
-        font-size: 15px;
-        margin: auto;
-        width: 60%;
-        
-    }
-
-    .container-studies img {
-        width: 40px;
-        height: 20%;
-    }
-    
-    .container-studies-text p{
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    .hability h2 {
-        font-size: 24px;
-        display: flex;
-        justify-content: center;
-        margin: 30px 0;
-        padding: 20 0;
-        width: 100%;    
-    }
-
-    .hability-text {
-        font-size: 16px;
-        margin: auto;
-        width: 60%;
-    }
-
-    .container-hability img{
-        width: 40px;
-    }
-
-    .container-hability-text p{
-        font-size: 16px;
-    }
-
-    .projects h2 {
-        font-size: 30px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px; 
-        margin-top: 20px;
-
-    }
-
-    .project-left{
-        font-size: 15px;
-        width: 70%;
-        height: 250px;
-        padding: 15px;
+    .hability h2{
+        width: 50%;
     }
 
 
-    .experiencia{
-        padding: 0;
-        margin: 0;
+    .container-hability a{
+        width: calc(20%);
+        height: auto+0.1;
+        font-size: 12px;
     }
 
-    .experiences h2{
-        font-size: 30px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px; 
-        margin-top: 20px;
-        padding-top: 80px;
-    }
-
-    .experience-down{
-        font-size: 15px;
-        width: 70%;
-        height: 150px;
-        margin-left: 50px;  
-    }
-
-    .experience-down h3{
-        margin: 0;
-    }
-
-    .contact h2{
-        font-size: 30px;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
 
     .contact-formulary{
         width: 100%;

@@ -2,30 +2,27 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lian K. Guevara</title>
-    <meta name="MobileOptimized" content="width" />
-    <meta name="HandheldFriendly" content="true" />
-    <link rel="shortcut icon" href="img/icon.jpg" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="CSS/Style.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Yusei+Magic&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/src/Styles/Style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+   
     <div class="hamburguer">
-        <img src="img/menu.png" alt="menu">
+        <img src="public/menu.svg" alt="menu">
     </div>
 <!-- -------header------ --> 
     <header>
+        <a class="link" href="/">
+            <div class="monogram">JW</div>
+        </a>
         <nav class="menu">
             <ul>
                 <li><a class="link" href="#Acerca">Acerca de</a></li>
@@ -36,115 +33,49 @@
             </ul>
         </nav>
     </header>
-<!-- -------main------ -->
-    <section id=Inicio class="main">
-        <img src="img/hero.jpg" alt="inicio">
-
-        <div class="main-container">
-            <h1>Lian Katherin Guevara</h1>
-            <p class="main-text">Frontend Developer.</p>
+    <!-- -------main------ -->
+    <section>
+        <div>
+            <h1>LIAN KATHERIN GUEVARA</h1>
+            <p>Desarrolladora FrontEnd apasionada por la tecnología y el medio ambiente...</p>
         </div>
     </section>
 
-    <section id="Acerca" class="about-container">
-        <div class="about-title">
-            <h1>Acerca de</h1>
+    <section id="Acerca">
+        <div>
+            <h2>SOBRE MI</h2>
         </div>
 
         <div class="about-name">
-            <figure>
-                <img src="img/personal.jpg" alt="personal">
-            </figure>
-            <div class="name-description">
-                <h2>Lian Katherin Guevara</h2>
-                <div class="country-description">
-                    <p class="country-title">Bogotá D.C</p>
-                    <img src="img/bandera.png" height=30px alt="Bandera">
-                </div>
-            </div>
+           
+            <p>Desarrolladora Trainee con conocimiento en JavaScript, React JS, css y GitHub. 
+                Empática, responsable, con capacidad de escucha,  compromiso y trabajo en equipo. Me adapto a cualquier proyecto y reto que me propongan. Veo el aprendizaje como algo continuo y siempre estoy aprendiendo nuevas tecnologías.
+                
+                Actualmente me encuentro en la etapa productiva de la tecnología en Análisis y Desarrollo en Sistemas de Información, formación realizada en el SENA.
+            </p>
         </div>
-        <div class="about-description">
-            <p>Desarrolladora Frontend con conocimiento en HTML, CSS, JavaScript, Python y Git-Hub, capaz de trabajar en equipo y
-            aprender nuevas tecnologías. Con los conocimientos adheridos tengo la capacidad de poderlos aplicar en diferentes proyectos para cualquier industria que requiera la implementación de sistemas de información y desarrollo Web.</p>
-            <div class="button-description">
-                <a href="CV Lian.pdf" target="_blank" class="button"> Descargar CV</a>
-            </div>
-        </div>
-        <div class="redes">
-            <a class="git" href="https://github.com/lkguevara" target="_blank"><img src="img/github.png"
-                    alt="github"></a>
-            <a class="linkedin" href="https://www.linkedin.com/in/lian-katherin-guevara-38868b11b" target="_blank"><img
-                    src="img/linkedin.png" alt="linkedin"></a>
-            <a class="whatsapp" href="https://api.whatsapp.com/send?phone=573183934470b" target="_blank"><img
-                    src="img/whatsapp.png" alt="Whatsapp"></a>
+    </section>
 
-
-        </div>
-        <div id="habilidades" class="hability">
-            <h2>Habilidades</h2>
-            <div class="container-hability">
-                <a><img class= "hability_redes" src="img/html.svg" alt="html-5">HTML</a>
-                <a><img class= "hability_redes css"src="img/css-3.svg" alt="css-3">CSS</a>
-                <a><img class= "hability_redes JavaScrip" src="img/js.svg" alt="JavaScrip"></a>
-                <a><img class= "hability_redes Python" src="img/python.svg" alt="python">Python</a>
-                <a><img class= "hability_redes Git" src="img/git.svg" alt="Git">Git</a>                
-            </div>
-        </div>
+    <section id="skills" class="projects">
+        <h2>HABILIDADES</h2>
     </section>
 
     <section id="proyecto" class="projects">
-        <h2>Proyectos</h2>
-        <div class="Container_Projects">
-            <div class="project_1">
-                <div class="content-img">
-                    <img src="img/project_1.JPG" alt="" class="">              
-                </div>
-                <div class="Portafolio">
-                    <h3>Mi portafolio</h3>
-                    <p>Realizado con las tecnologías de Html, Css y JavaScript.</p>
-                </div>
-                <div class="See">
-                    <a href="https://lkguevara.github.io/Portafolio_Lian/" target="blank" clas="">Ver</a>
-                </div>
-            </div>   
-            <div class="project_2">                
-                <div class="content-img2">
-                    <img src="img/project_2.JPG">              
-                </div>
-                <div class="Store">
-                    <h3>Cereza Beauty Bar</h3>
-                    <h4>En progreso</h4>
-                    <p>Tienda en línea de ropa interior para mujer.</p>
-                </div>
-                <div class="See">
-                    <a href="https://lkguevara.github.io/Cereza_Beauty_Bar/" target="blank" clas="">Ver</a>
-                </div>
-            </div>  
-        </div>     
-            
+        <h2>PROYECTOS</h2>
     </section>
 
     <section id="contacto" class="contact">
-        <h2 class="contact-text">Contacto</h2>
-        <div class="contact-formulary">
-            <h3 class="email">liann.guevara@gmail.com</h3>
-            <p class="envio-email">Haga click para envíar email<a
-                    href="mailto:liann.guevara@gmail.com?Subject=Aquí%20el%20asunto%20del%20email" target="_blank"><img
-                        src="img/email.png" height=20px alt="Gmail"></a></p>
-
-        </div>
+        <h2 class="contact-text">CONTACTO</h2>
     </section>
 
     <footer class="footer">
         <div class="footer-detail">
             <p>Designe by Lian Guevara 👩‍💻🎈</p>
-            <img src="img/Web.png" alt="Web">
         </div>
     </footer>
 
     <!-- Particle JS -->
 
-   
     <script>
 
         const menu_hamburguer = document.querySelector(".menu");
@@ -164,9 +95,6 @@
                 menu_hamburguer.classList.add("menu_active")
             }
         }
-
-
-
     </script>
 
 </body>

@@ -197,14 +197,13 @@ main {
 
 /* about */
 
-.about {
+.about, .skills,.projects, .contact, .footer {
     padding-left: 5.5rem;
 }
 
-.about h2 {
+.about h2, .projects h2 {
     text-align: right;
     margin-right: 5rem;
-    
 }
 
 .about__description h3{
@@ -231,7 +230,27 @@ button .btn {
     margin: 0;
 }
 
+/* skills */
 
+.skills{
+    margin-bottom: 5rem;
+}
+.skills__icon{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 5rem;
+}
+
+.skills__icon--item {
+    margin: 1rem 2rem;
+}
+
+/* projects */
+
+.projects{
+    margin-top: 5rem;
+}
 /*Media Queries*/
 
 @media screen and (max-width:640px){

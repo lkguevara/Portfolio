@@ -45,12 +45,12 @@ h1,h2,h3{
 }
 
 h2{
-    font-size: 2.2rem;
+    font-size: 3rem;
     color: var(--secundario);
 }
 
 h3{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 100;
 }
 
@@ -84,7 +84,7 @@ a{
 
   .btn:hover,
   .btn:focus {
-  background-color: #a54b6e;
+  background-color: var(--secundario);
 }
 
 /*Utilidades*/
@@ -145,7 +145,7 @@ ul {
 
 /* main */
 .main__container { 
-    height: 100vh;
+    height: 95vh;
     align-items: center;
     display: grid;
     grid-template-columns: no-repeat(1, 0.1fr); 
@@ -166,10 +166,10 @@ ul {
     color: var(--secundario);
 }
 
-.hero__tittle h2 {
-    font-size: 3.5rem;
+.hero__tittle h1 {
+    font-size: 3rem;
     text-align: center;
-    padding-left: 3.2rem;
+    color: var(--secundario);
 }
 .hero__tittle strong {
     font-size: 1.8rem;
@@ -207,7 +207,8 @@ ul {
 /* about */
 
 .about, .skills,.projects, .contact, .footer {
-    padding-left: 5.5rem;
+    padding: 0 2rem 0 4rem;
+    margin-bottom: 10rem;
 }
 
 .about h2, .projects h2 {
@@ -217,7 +218,7 @@ ul {
 
 .about__description h3{
     margin-right: 4rem;
-    text-align: end;
+    text-align: justify;
 }
 
 .btn a{
@@ -241,19 +242,18 @@ button .btn {
 
 /* skills */
 
-.skills{
-    margin-bottom: 5rem;
-}
 .skills__icon{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-right: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    
 }
 
-.skills__icon--item {
-    margin: 1rem 2rem;
+.skills__icon img {
+    padding-bottom: 2rem;
 }
+
+
 
 /* projects */
 
@@ -333,6 +333,7 @@ button .btn {
 @media (min-width: 640px) {
     h1{
         font-size: 4.4rem;
+        color: var(--secundario);
     }
     h2{
         font-size: 3.6rem;
@@ -350,7 +351,7 @@ button .btn {
         font-size: 3.5rem;
     }
     
-    .hero__tittle h2 {
+    .hero__tittle h1 {
         font-size: 4.5rem;
     }
 
@@ -386,9 +387,32 @@ button .btn {
     /* about */
     .about__description h3{
         font-size: 2rem;
+        text-align: end;
     }
     
     .btn a{
         font-size: 1.8rem;
     }
+
+    /* skills */
+    .skills__icon{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin: 0rem 4rem;
+        justify-items: normal
+    }
+
+    .skills__icon--item img{
+        width: 40%;
+    }
+    
+}
+
+@media (min-width: 1020px) { 
+    .about, .skills,.projects, .contact, .footer {
+        padding: 0 15rem;
+    }
+
+
+    
 }

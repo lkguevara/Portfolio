@@ -118,6 +118,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    height: 5rem;
 }
 
 .hamburguer img{
@@ -143,18 +144,22 @@ ul {
 }
 
 /* main */
-main { 
-    height: 89vh;
+.main__container { 
+    height: 100vh;
     align-items: center;
-    margin-top: 0rem;
+    display: grid;
+    grid-template-columns: no-repeat(1, 0.1fr); 
+    align-items: start;
+    grid-template-rows: repeat(2, 1fr);
 }
 .hero__tittle {
-    align-items: center;
-    padding-top: 10rem;
+    margin-top: 10rem;
+    
+    
 }
 
 .hero__tittle span {
-    font-size: 2.2rem;
+    font-size: 3rem;
     margin: 0;
     display: block;
     text-align: center;
@@ -162,37 +167,41 @@ main {
 }
 
 .hero__tittle h2 {
-    font-size: 2.5rem;
-    margin: 0;
+    font-size: 3.5rem;
     text-align: center;
+    padding-left: 3.2rem;
 }
-
 .hero__tittle strong {
-    font-size: 1.5rem;
-    margin-top: 5rem;
+    font-size: 1.8rem;
     display: block;
     text-align: center;
     color: var(--gris);
     font-weight: 100;
-    padding: 0 3rem;
+    padding: 0 4rem 0 4rem;
 }
-.social {
-    display: flex;
-    margin-top: 10rem;
-    
-}
+
 
 .social__icon {
     position: fixed;
+    display: block;
+    margin-top: 30rem;
 }
 
-.cube3D {
-    margin: 2rem auto;
+.hero__cube {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.hero__cube img {
+    display: grid;
+    margin-top: 1rem;
 }
 .imgSocial{
-    width: 30%;
+    width: 50%;
     padding: 6px;
-    margin: 0 2.5rem;
+    margin: 0 1rem;
+
 }
 
 /* about */
@@ -255,10 +264,10 @@ button .btn {
 
 @media screen and (max-width:640px){
 
-    header {
+    /* header {
         height: 6rem;
         
-    }
+    } */
 
     .monogram {
         visibility: hidden;
@@ -332,45 +341,46 @@ button .btn {
     h3{
         font-size: 2.8rem;
     }
-    
-    main {
-        margin-top: 5rem;;
-    }
-    .hero__tittle {
-        margin: 5rem;
+
+    /* main */
+    .main__container {
+        grid-template-rows: repeat(4, 1fr);
     }
     .hero__tittle span {
-        font-size: 2.8rem;
+        font-size: 3.5rem;
     }
     
     .hero__tittle h2 {
-        font-size: 3.6rem;
-    }
-    
-    .hero__tittle strong {
-        font-size: 2rem;
-        font-weight: 500;
-    }
-    .social {
-        display: block;
-        margin-top: 5rem;
+        font-size: 4.5rem;
     }
 
+    .hero__tittle strong {
+        font-size: 2.5rem;
+        font-weight: 100;
+        padding: 0 10rem 0 10rem;
+    }
+    
     .social__icon {
         position: static;
         display: flex;
+        margin-top: 4rem;
         justify-content: center;
     }
-
-    .imgSocial{
-        width: 40%;
-        padding: 0;
-        margin: 0 2rem;
+    
+    .hero__cube {
+        display: flex;
+        justify-content: center;
+        align-items: start;
     }
-
-    .cube3D {
-        margin-top: 10rem;
-        width: 15%;
+    
+    .hero__cube img {
+        width: 12%;
+    }
+    .imgSocial{
+        width: 80%;
+        padding: 1rem;
+        margin: 0 1rem;
+    
     }
 
     /* about */

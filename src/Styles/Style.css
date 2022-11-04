@@ -187,6 +187,14 @@ ul {
     margin-top: 30rem;
 }
 
+.imgSocial:hover {
+    transform: scale(1.5);
+    transition: all 0.5s ease;
+    /* opacity: 0.8; */
+    background-color: rgb(1, 21, 63);
+    border-radius: 5%;
+}
+
 .hero__cube {
     display: flex;
     justify-content: center;
@@ -253,12 +261,71 @@ button .btn {
     padding-bottom: 2rem;
 }
 
+.skills__icon img:hover {
+    transform: scale(1.5);
+    transition: all 0.5s ease;
+    opacity: 0.8;
+}
+
 
 
 /* projects */
 
 .projects{
     margin-top: 5rem;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    margin-top: 2rem;
+    justify-items: center;
+    margin: 0 4rem;
+}
+
+.card__img {
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card__img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    background: #FF7A59;
+    opacity: 0.8;
+}
+
+.card__item {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card__paragraph{
+    color: var(--primario);
+    text-align: center;
+}
+
+.description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.description__tech {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.deploy{
+    padding-right: 1rem;
 }
 /*Media Queries*/
 
@@ -413,6 +480,27 @@ button .btn {
         padding: 0 15rem;
     }
 
+    .skills__icon{
+       margin: 0rem 22rem;
+    }
 
+    .skills__icon img:hover {
+        transform: scale(1.3);
+        transition: all 0.5s ease;
+        opacity: 0.8;
+    }
+
+    .card {
+        width: 30%;
+        margin: 0 auto
+    }
+
+    .card__paragraph{
+        font-size: 2.5rem;
+    }
+
+    .deploy__image{
+        width: 40px;
+    }
     
 }

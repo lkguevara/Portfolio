@@ -108,38 +108,21 @@
 
     </section>
 
-    <section id="contacto" class="contact">
+    <section id="contact" class="contact">
         <h2 class="contact-text">CONTACTO</h2>
+        <p>Me encuentro en la búsqueda de nuevas oportunidades y así poder incursionarme en el mundo del desarrollo web.</p>
+        <a href="mailto:liann.guevara@gmail.com?Subject=Aquí%20el%20asunto%20del%20email" target="_blank">¡ Escríbeme !</a>
+        <img src="public/mail.svg" class="contact__img" alt="">
+       
     </section>
 
     <footer class="footer">
-        <div class="footer-detail">
-            <p>Designe by Lian Guevara 👩‍💻🎈</p>
-        </div>
+        <p>Designe by Lian Guevara 👩‍💻🎈</p>
     </footer>
 
     <!-- Particle JS -->
 
-    <script>
-
-        const menu_hamburguer = document.querySelector(".menu");
-
-        const button_hamburguer = document.querySelector(".hamburguer")
-
-
-        button_hamburguer.addEventListener("click", WatchHiden);
-
-        menu_hamburguer.classList.add("menu_active");
-
-        function WatchHiden() {
-            if (menu_hamburguer.classList.contains("menu_active")) {
-                menu_hamburguer.classList.remove("menu_active")
-            }
-            else {
-                menu_hamburguer.classList.add("menu_active")
-            }
-        }
-    </script>
+<script src="src/app.js"></script>
 
 </body>
 

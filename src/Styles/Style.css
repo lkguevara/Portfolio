@@ -214,7 +214,7 @@ ul {
 
 /* about */
 
-.about, .skills,.projects, .contact, .footer {
+.about, .skills,.projects {
     padding: 0 2rem 0 4rem;
     margin-bottom: 10rem;
 }
@@ -326,6 +326,44 @@ button .btn {
 
 .deploy{
     padding-right: 1rem;
+}
+
+/* contact */
+
+.contact {
+    margin-top: 5rem;
+    padding: 0;
+}
+.contact h2 {
+    padding: 0 2rem 0 4rem;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 2rem 0 3.8rem;
+}
+
+.contact a {
+    font-size: 2.5rem;
+    color: var(--gris);
+    display: block;
+    text-align: center;
+    padding: 0 2rem 0 3.8rem;
+    text-decoration: none;
+}
+
+.contact__img {
+   width: 30%;
+   margin: 2rem auto;
+   padding-top: 1.5rem;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem;
+    padding-left: 2rem;
 }
 /*Media Queries*/
 
@@ -472,8 +510,34 @@ button .btn {
     .skills__icon--item img{
         width: 40%;
     }
+
+    .card {
+        width: 50%;
+        margin: 0 auto;
+
+    }
+
+    /* contact */
+    .contact p {
+        font-size: 2.5rem;
+    }
+
+
     
+    .contact__img {
+       width: 25%;
+       margin: 2rem auto;
+       padding-top: 1.5rem;
+    }
+    
+    .footer p {
+        font-size: 1.8rem;
+        margin-top: 4rem;
+    }
 }
+
+
+
 
 @media (min-width: 1020px) { 
     .about, .skills,.projects, .contact, .footer {
@@ -491,7 +555,7 @@ button .btn {
     }
 
     .card {
-        width: 30%;
+        width: 35%;
         margin: 0 auto
     }
 
@@ -503,4 +567,14 @@ button .btn {
         width: 40px;
     }
     
+}
+
+@media (min-width: 1600px) { 
+    .contact__img {
+        width: 15%;
+    }
+
+    .skills__icon--item {
+        width: 55%;
+    }
 }

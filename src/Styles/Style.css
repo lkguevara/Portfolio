@@ -191,7 +191,6 @@ ul {
     transform: scale(1.5);
     transition: all 0.5s ease;
     /* opacity: 0.8; */
-    background-color: rgb(1, 21, 63);
     border-radius: 5%;
 }
 

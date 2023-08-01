@@ -590,14 +590,12 @@ button .btn {
     /* skills */
     .skills__icon{
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         margin: 0rem 4rem;
-        justify-items: normal
+        justify-items: center
     }
 
-    .skills__icon--item img{
-        width: 40%;
-    }
+
 
     .card {
         grid-template-columns: repeat(2, 1fr);
@@ -638,7 +636,9 @@ button .btn {
     }
 
     .skills__icon{
-       margin: 0rem 22rem;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        margin: 0rem 20rem;
     }
 
     .skills__icon img:hover {
@@ -695,6 +695,13 @@ button .btn {
         transform: rotateX(-90deg) translateZ(80px) rotateZ(-90deg);
     }
     
+}
+
+@media (min-width: 1400px) { 
+    .card {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 4rem;
+    }
 }
 
 @media (min-width: 1600px) { 

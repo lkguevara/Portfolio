@@ -702,6 +702,14 @@ button .btn {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 4rem;
     }
+    .about__description{
+        display: flex;
+        justify-content: flex-end
+    }
+    .about__description h3{
+        width: 80%;
+        margin-right: 5rem
+    }
 }
 
 @media (min-width: 1600px) { 

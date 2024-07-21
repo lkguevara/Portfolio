@@ -655,6 +655,10 @@ button .btn {
         width: 40px;
     }
 
+    .strapi-image{
+        width: 70px;
+    }
+
     .caja{
         position: relative;
         width: 160px;

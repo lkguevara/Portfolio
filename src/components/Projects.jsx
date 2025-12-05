@@ -1,15 +1,30 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+// imagenes
+import unipuzzleImg from "../assets/projects/unipuzzle.png";
+import perlaImg from "../assets/projects/perla.png";
+import moviflixImg from "../assets/projects/moviflix.png";
+import rickAndMortyImg from "../assets/projects/rick-and-morty.png";
+import codingChallengesImg from "../assets/projects/coding-challenges.png";
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(0);
 
   const projects = [
     {
+      title: "unipuzzlelatam",
+      desc: "Progressive Web App (PWA) que permite a los estudiantes explorar opciones académicas y recibir información personalizada de universidades mediante una interfaz interactiva potenciada por Inteligencia Artificial. Consumo de API con respuestas en streaming para una experiencia conversacional fluida.",
+      tech: ["React", "Tailwind", "Zustand", "OpenAI API", "Fetch API"],
+      image: unipuzzleImg,
+      url: "https://unipuzzlelatam.com/",
+      category: "Web App",
+      color: "from-orange/20 to-pink-500/20",
+    },
+    {
       title: "Perlaswimwear",
       desc: "E-commerce de trajes de baño con Strapi CMS. Catálogo dinámico, carrito de compras y panel de administración.",
       tech: ["React", "Tailwind", "Redux", "Strapi"],
-      image: "/assets/perla.png",
+      image: perlaImg,
       url: "https://perlaswimwear.vercel.app",
       category: "E-commerce",
       color: "from-orange/20 to-pink-500/20",
@@ -18,7 +33,7 @@ const Projects = () => {
       title: "Moviflix",
       desc: "Aplicación de películas consumiendo API externa. Búsqueda en tiempo real y detalles completos de películas.",
       tech: ["React", "API REST"],
-      image: "/assets/moviflix.png",
+      image: moviflixImg,
       url: "https://movie-flix0.vercel.app",
       github: "https://github.com/lkguevara/movieFlix",
       category: "Web App",
@@ -27,23 +42,22 @@ const Projects = () => {
     {
       title: "Rick And Morty",
       desc: "App con gestión de estado usando Redux. Filtros avanzados y favoritos persistentes en localStorage.",
-      tech: ["React", "Redux"],
-      image: "/assets/rick-and-morty.png",
+      tech: ["React", "Redux", "Node.js", "Express", "Axios"],
+      image: rickAndMortyImg,
       url: "https://rick-and-morty-r.vercel.app/",
       github: "https://github.com/lkguevara/rick-and-morty",
       category: "Web App",
       color: "from-green-500/20 to-cyan-500/20",
     },
     {
-      title: "ToDo List",
-      desc: "Lista de tareas con autenticación y base de datos en tiempo real con Firebase. CRUD completo y persistencia.",
-      tech: ["React", "Firebase"],
-      image: "/assets/todo-list.png",
-      url: "https://to-do-react-firebase.vercel.app/",
-      github: "https://github.com/lkguevara/todoList-react-firebase",
-      category: "Productivity",
+      title: "Resolución de problemas de codificiación.",
+      desc: "Resolución de problemas de codificiación.",
+      tech: ["JavaScript", "HTML", "CSS"],
+      image: codingChallengesImg,
+      github: "https://github.com/lkguevara/coding-challenges",
+      category: "Coding Challenges",
       color: "from-yellow-500/20 to-orange/20",
-    },
+    }
   ];
 
   const handleProjectClick = (index) => {
@@ -89,9 +103,11 @@ const Projects = () => {
 
           {/* Project Info */}
           <div className="p-4">
-            <p className="text-gray-300 text-sm mb-4 leading-relaxed">
-              {project.desc}
-            </p>
+            {project.desc && (
+              <p className="text-gray-300 text-sm mb-4 leading-relaxed">
+                {project.desc}
+              </p>
+            )}
 
             {/* Action Buttons */}
             <div className="flex gap-3">
@@ -372,9 +388,9 @@ const Projects = () => {
 
                   {/* Action Buttons */}
                   <div className="flex gap-4">
-                    {(projects[activeProject]?.url || projects[0].url) && (
+                    {projects[activeProject]?.url && (
                       <a
-                        href={projects[activeProject]?.url || projects[0].url}
+                        href={projects[activeProject]?.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1 px-6 py-3 bg-orange text-white rounded-xl font-bold hover:bg-orange/80 hover:shadow-lg hover:shadow-orange/30 transition-all inline-flex items-center justify-center gap-2"
@@ -395,9 +411,9 @@ const Projects = () => {
                         Ver Demo
                       </a>
                     )}
-                    {(projects[activeProject]?.github || projects[0].github) && (
+                    {projects[activeProject]?.github && (
                       <a
-                        href={projects[activeProject]?.github || projects[0].github}
+                        href={projects[activeProject]?.github}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-6 py-3 bg-white/10 text-white border-2 border-white/20 rounded-xl font-bold hover:bg-white/20 hover:border-white/40 transition-all inline-flex items-center gap-2"

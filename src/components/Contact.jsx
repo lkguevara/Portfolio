@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const Contact = () => (
-  <section id="contact" className="relative">
+  <section id="contacto" className="relative">
     {/* Main Contact Section */}
-    <div className="py-20 px-6 bg-gradient-to-b from-dark via-dark to-[#1a1a1a]">
+    <div className="py-8 md:py-20 px-6 bg-linear-to-b from-dark via-dark to-[#1a1a1a]">
       <div className="max-w-4xl mx-auto text-center">
         {/* Decorative elements */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-orange/10 rounded-full blur-3xl" />
@@ -15,10 +15,10 @@ const Contact = () => (
           viewport={{ once: true }}
           className="relative z-10"
         >
-          <h2 className="text-5xl md:text-6 xl font-black mb-6 text-orange">
+          <h2 className="text-4xl md:text-5xl font-black mb-6 text-orange">
             ¿Trabajamos juntos?
           </h2>
-          <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+          <p className="text-md md:text-lg text-gray-300 mb-6 md:mb-12 max-w-2xl mx-auto">
             Estoy disponible para nuevos proyectos y oportunidades. ¡Hablemos
             sobre cómo puedo ayudar a tu equipo! 🚀
           </p>
@@ -34,9 +34,9 @@ const Contact = () => (
         >
           <a
             href="mailto:liann.guevara@gmail.com"
-            className="inline-flex items-center gap-3 px-10 py-5 text-xl font-bold rounded-2xl shadow-2xl bg-orange text-white hover:bg-orange/90 hover:shadow-orange/50 transition-all group"
+            className="inline-flex items-center gap-3 px-4 md:px-6 py-2 md:py-4 text-xl font-bold rounded-2xl shadow-2xl bg-purple text-white hover:bg-purple/90 hover:shadow-purple/50 transition-all group"
           >
-            <span className="text-2xl">✉️</span>
+            <span className="text-lg md:text-2xl">✉️</span>
             ¡Escríbeme!
             <svg
               className="w-5 h-5 group-hover:translate-x-1 transition-transform"

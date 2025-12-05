@@ -18,35 +18,9 @@ const Footer = () => {
                 <span className="text-gray-400 text-sm">Frontend Developer</span>
                 </div>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                Construyendo experiencias web hermosas y funcionales desde
-                Colombia 🇨🇴
+                Construyendo soluciones web modernas y atractivas con pasión y
+                dedicación.
                 </p>
-            </motion.div>
-
-            {/* Quick Links */}
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1 }}
-            >
-                <h4 className="text-orange font-bold mb-4">Navegación</h4>
-                <ul className="space-y-2">
-                {["About", "Skills", "Projects", "Contact"].map((item) => (
-                    <li key={item}>
-                    <button
-                        onClick={() =>
-                        document
-                            .getElementById(item.toLowerCase())
-                            ?.scrollIntoView({ behavior: "smooth" })
-                        }
-                        className="text-gray-400 hover:text-orange transition-colors text-sm"
-                    >
-                        {item}
-                    </button>
-                    </li>
-                ))}
-                </ul>
             </motion.div>
 
             {/* Social */}

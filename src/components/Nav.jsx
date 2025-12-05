@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navItems = ["Habilidades", "Proyectos", "Contacto"];
 
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -23,7 +24,7 @@ const Nav = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6">
-          {["About", "Skills", "Projects", "Contact"].map((item, i) => (
+          {navItems.map((item, i) => (
             <motion.li
               key={item}
               initial={{ opacity: 0, y: -10 }}
@@ -32,7 +33,7 @@ const Nav = () => {
             >
               <button
                 onClick={() => scrollTo(item.toLowerCase())}
-                className="text-white hover:text-orange transition-colors text-sm font-medium cursor-pointer"
+                className="text-white hover:text-orange transition-colors text-sm md:text-base font-medium cursor-pointer"
               >
                 {item}
               </button>
@@ -75,9 +76,9 @@ const Nav = () => {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-dark border-t border-orange"
+          className="md:hidden bg-purple/20 border-t border-orange"
         >
-          {["About", "Skills", "Projects", "Contact"].map((item) => (
+          {navItems.map((item) => (
             <button
               key={item}
               onClick={() => scrollTo(item.toLowerCase())}

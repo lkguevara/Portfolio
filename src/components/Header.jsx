@@ -7,7 +7,6 @@ const Header = () => {
   const location = useLocation();
 
   const links = [
-    { name: "Acerca", path: "/about" },
     { name: "Habilidades", path: "/skills" },
     { name: "Proyectos", path: "/projects" },
     { name: "Contacto", path: "/contact" },

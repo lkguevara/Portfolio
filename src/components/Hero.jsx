@@ -58,7 +58,7 @@ const Hero = () => {
       </div>
 
       <div className="max-w-6xl mx-auto w-full relative z-10">
-        <div className="grid md:grid-cols-5 gap-12 items-start">
+        <div className="grid md:grid-cols-5 gap-6 md:gap-12 items-start">
           {/* Left: Main Hero */}
           <div className="md:col-span-3">
             <motion.div
@@ -66,7 +66,7 @@ const Hero = () => {
               animate={{ opacity: 1, x: 0 }}
               className="flex items-center gap-2 mb-4"
             >
-              <span className="text-sm text-white">— Hey!</span>
+              <span className="text-sm text-white ">— ¡Hola!</span>
               <motion.span
                 className="px-3 py-1 text-xs rounded-full font-medium bg-orange text-white relative"
                 animate={{
@@ -79,7 +79,7 @@ const Hero = () => {
                 }}
               >
                 <motion.span
-                  className="absolute inset-0 rounded-full bg-orange/80"
+                  className="absolute inset-0 rounded-full bg-purple/80"
                   animate={{
                     scale: [1, 1.1],
                     opacity: [0.1, 0],
@@ -98,18 +98,18 @@ const Hero = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-5xl md:text-7xl font-bold mb-3 text-white"
+              className="text-4xl md:text-7xl font-bold mb-3 text-white"
             >
-              I'm <span className="text-orange">Lian Katherin</span>
+              Soy <span className="text-orange">Lian Katherin</span>
             </motion.h1>
 
             <motion.h2
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-3xl md:text-5xl font-bold mb-6 text-orange"
+              className="text-2xl md:text-5xl font-bold mb-6 text-orange"
             >
-              FrontEnd Developer
+              Frontend Developer
             </motion.h2>
 
             <motion.p
@@ -118,8 +118,7 @@ const Hero = () => {
               transition={{ delay: 0.3 }}
               className="text-gray-300 mb-8 leading-relaxed text-lg"
             >
-              Desarrollando experiencias web hermosas desde Colombia 🇨🇴.
-              Apasionada por la tecnología 🌐 y el medio ambiente 🌿.
+            Creando soluciones web modernas desde Colombia 🇨🇴. Con más de 2 años de experiencia en desarrollo frontend, me especializo en crear interfaces rápidas y eficientes. <br/> Apasionada por la tecnología y el medio ambiente 🌿
             </motion.p>
 
             <motion.div
@@ -130,7 +129,7 @@ const Hero = () => {
             >
               <a
                 href="mailto:liann.guevara@gmail.com"
-                className="px-8 py-4 rounded-xl font-medium inline-flex items-center gap-2 shadow-lg bg-purple text-white hover:bg-purple/80 transition-all"
+                className="px-4 md:px-8 py-2 md:py-4 rounded-xl font-medium inline-flex items-center gap-2 shadow-lg bg-purple text-white hover:bg-purple/80 transition-all text-sm md:text-base"
               >
                 <svg
                   className="w-5 h-5"
@@ -145,14 +144,14 @@ const Hero = () => {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                Contact me
+                ¡ Escríbeme !
               </a>
 
               <a
                 href="/assets/cv-lkguevara.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 rounded-xl font-medium inline-flex items-center gap-2 shadow-lg bg-purple text-white hover:bg-purple/80 transition-all"
+                className="px-4 md:px-8 py-2 md:py-4 rounded-xl font-medium inline-flex items-center gap-2 shadow-lg bg-purple text-white hover:bg-purple/80 transition-all text-sm md:text-base"
               >
                 <svg
                   className="w-5 h-5"
@@ -167,7 +166,7 @@ const Hero = () => {
                     d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                   />
                 </svg>
-                Download CV
+                Descargar CV
               </a>
             </motion.div>
 
@@ -284,25 +283,15 @@ const Hero = () => {
                     <p className="text-xs">
                       Actualmente iniciando el aprendizaje de{" "}
                       <span className="text-orange font-semibold">
-                        TypeScript, Next.js
+                        TypeScript, Next.js,
                       </span>{" "}
                       y un plan de estudios en{" "}
                       <span className="text-orange font-semibold">
                         Inteligencia Artificial
                       </span>{" "}
-                      aplicada al desarrollo frontend.
+                      aplicada al desarrollo web.
                     </p>
                   </div>
-
-                  <p>
-                    Me caracterizo por mi{" "}
-                    <span className="text-white font-semibold">
-                      adaptabilidad en entornos ágiles (Scrum)
-                    </span>
-                    , la implementación de buenas prácticas en frontend y un
-                    interés constante por aprender y mantenerme actualizada en
-                    el entorno de desarrollo.
-                  </p>
                 </div>
               </div>
             </motion.div>
@@ -315,7 +304,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 cursor-pointer z-20"
+        className="hidden md:flex md:absolute bottom-12 left-1/2 -translate-x-1/2 cursor-pointer z-20"
         onClick={() =>
           document
             .getElementById("skills")
@@ -331,7 +320,6 @@ const Hero = () => {
           }}
           className="flex flex-col items-center gap-3"
         >
-          <span className="text-orange text-sm font-bold">Scroll Down</span>
           <div className="w-12 h-12 rounded-full border-2 border-orange flex items-center justify-center">
             <svg
               className="w-8 h-8 text-orange"

@@ -1,61 +1,66 @@
 import { motion } from "framer-motion";
+// iconos
+import jsIcon from "../assets/skills/icon-js.png";
+import reactIcon from "../assets/skills/icon-react.png";
+import reduxIcon from "../assets/skills/redux.svg";
+import tailwindIcon from "../assets/skills/tailwind.png";
+import cssIcon from "../assets/skills/css.png";
+import zustandIcon from "../assets/skills/zustand.svg";
+import nodeIcon from "../assets/skills/node.svg";
+import postgresIcon from "../assets/skills/postgres.svg";
+import strapiIcon from "../assets/skills/strapi.avif";
 
 const Skills = () => {
   const allSkills = [
     {
       name: "JavaScript",
-      icon: "/legacy/assets/javascript.svg",
+      icon: jsIcon,
       color: "from-yellow-500/20 to-orange-500/20",
     },
     {
-      name: "React",
-      icon: "/legacy/assets/reactjs.svg",
+      name: "React JS",
+      icon: reactIcon,
       color: "from-blue-500/20 to-cyan-500/20",
     },
     {
       name: "Redux",
-      icon: "/legacy/assets/redux.svg",
-      color: "from-purple-500/20 to-pink-500/20",
+      icon: reduxIcon,
+      color: "from-purple-900/20 to-pink-500/20",
     },
     {
       name: "Tailwind CSS",
-      icon: "/legacy/assets/tailwind.svg",
+      icon: tailwindIcon,
       color: "from-cyan-500/20 to-blue-500/20",
     },
     {
-      name: "HTML",
-      icon: "/legacy/assets/html.svg",
-      color: "from-orange-600/20 to-red-600/20",
-    },
-    {
       name: "CSS",
-      icon: "/legacy/assets/css.svg",
+      icon: cssIcon,
       color: "from-blue-600/20 to-indigo-600/20",
     },
     {
+      name: "Zustand",
+      icon: zustandIcon,
+      color: "from-[#443E38] to-teal-500/20",
+    },
+    {
       name: "Node.js",
-      icon: "/legacy/assets/node.svg",
-      color: "from-green-600/20 to-emerald-600/20",
+      icon: nodeIcon,
+      color: "from-white/20 to-green-100/20",
     },
     {
       name: "PostgreSQL",
-      icon: "/legacy/assets/postgres.svg",
+      icon: postgresIcon,
       color: "from-blue-700/20 to-indigo-700/20",
     },
     {
-      name: "Firebase",
-      icon: "/legacy/assets/firebase.png",
-      color: "from-yellow-600/20 to-orange-600/20",
-    },
-    {
       name: "Strapi",
-      icon: "/legacy/assets/strapi.svg",
+      icon: strapiIcon,
       color: "from-purple-700/20 to-indigo-700/20",
     },
   ];
 
   return (
-    <section id="skills" className="py-20 px-6">
+    <section id="habilidades" className="py-8 md:py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -63,7 +68,7 @@ const Skills = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-black mb-4 text-orange">
+          <h2 className="text-4xl md:text-5xl font-black mb-4 text-orange">
             Habilidades
           </h2>
           <div className="w-24 h-1 mx-auto bg-orange" />
@@ -78,18 +83,18 @@ const Skills = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
               whileHover={{ scale: 1.08, y: -8 }}
-              className={`relative overflow-hidden p-6 rounded-2xl bg-gradient-to-br ${skill.color} border-2 border-orange/30 backdrop-blur-sm group cursor-pointer shadow-lg`}
+              className={`overflow-hidden p-3 rounded-2xl bg-linear-to-br ${skill.color} border-2 border-orange/30 backdrop-blur-sm group cursor-pointer shadow-lg`}
             >
               {/* Decorative gradient blob */}
               <div className="absolute top-0 right-0 w-24 h-24 bg-orange/10 rounded-full blur-2xl group-hover:bg-orange/20 transition-colors duration-300" />
 
               {/* Content */}
-              <div className="relative z-10 flex flex-col items-center gap-4">
-                <div className="w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <div className="z-10 flex flex-col items-center gap-3 md:gap-4">
+                <div className="flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <img
                     src={skill.icon}
                     alt={skill.name}
-                    className="w-full h-full object-contain"
+                    className="w-12 h-12 object-contain"
                   />
                 </div>
                 <span className="text-white font-bold text-sm text-center">
@@ -99,7 +104,7 @@ const Skills = () => {
 
               {/* Glow effect on hover */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute inset-0 bg-gradient-to-t from-orange/10 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-orange/10 via-transparent to-transparent" />
               </div>
             </motion.div>
           ))}

@@ -6,11 +6,22 @@ import perlaImg from "../assets/projects/perla.png";
 import moviflixImg from "../assets/projects/moviflix.png";
 import rickAndMortyImg from "../assets/projects/rick-and-morty.png";
 import codingChallengesImg from "../assets/projects/coding-challenges.png";
+import adaptilearnImg from "../assets/projects/adaptilearn.png";
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(0);
 
   const projects = [
+    {
+      title: "Adaptilearn",
+      desc: "Plataforma web de aprendizaje adaptativo enfocada en la creación y gestión de roadmaps de estudio personalizados. Combina visualización interactiva tipo grafo con persistencia de progreso y una arquitectura backend preparada para integrar tutores de IA. Incluye roadmaps públicos y privados, autenticación segura y control de acceso por usuario.",
+      tech: ["React", "React Flow", "Tailwind", "Zustand", "Node.js", "Express", "MongoDB", "JWT (Cookies)"],
+      image: adaptilearnImg,
+      // url: "https://adaptilearn.app",
+      github: "https://github.com/lkguevara/adaptilearn",
+      category: "Web App",
+      color: "from-blue-500/20 to-violet-500/20",
+    },
     {
       title: "unipuzzlelatam",
       desc: "Progressive Web App (PWA) que permite a los estudiantes explorar opciones académicas y recibir información personalizada de universidades mediante una interfaz interactiva potenciada por Inteligencia Artificial. Consumo de API con respuestas en streaming para una experiencia conversacional fluida.",
@@ -44,7 +55,6 @@ const Projects = () => {
       desc: "App con gestión de estado usando Redux. Filtros avanzados y favoritos persistentes en localStorage.",
       tech: ["React", "Redux", "Node.js", "Express", "Axios"],
       image: rickAndMortyImg,
-      url: "https://rick-and-morty-r.vercel.app/",
       github: "https://github.com/lkguevara/rick-and-morty",
       category: "Web App",
       color: "from-green-500/20 to-cyan-500/20",

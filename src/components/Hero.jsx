@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import cv from "../assets/skills/cv-lkguevara.pdf";
+// import cv from "../assets/skills/cv-lkguevara.pdf";
 
 const Hero = () => {
   const [particles] = useState(() =>
@@ -149,7 +149,7 @@ const Hero = () => {
               </a>
 
               <a
-                href={cv}
+                href="https://res.cloudinary.com/dyqkih9mx/image/upload/v1768518286/cv-lkguevara_sqyjgc.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 md:px-8 py-2 md:py-4 rounded-xl font-medium inline-flex items-center gap-2 shadow-lg bg-purple text-white hover:bg-purple/80 transition-all text-sm md:text-base"

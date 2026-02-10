@@ -34,6 +34,166 @@ body {
   min-height: 100vh;
 }
 
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.animated-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(40% 40% at 20% 20%, rgba(61, 18, 84, 0.35), transparent 60%),
+    radial-gradient(45% 45% at 80% 25%, rgba(254, 137, 5, 0.18), transparent 60%),
+    radial-gradient(30% 30% at 35% 75%, rgba(119, 64, 105, 0.25), transparent 60%),
+    linear-gradient(180deg, #1b1724 0%, #0f0c16 55%, #08060d 100%);
+}
+
+.space-nebula {
+  position: absolute;
+  width: 60vmax;
+  height: 60vmax;
+  border-radius: 50%;
+  filter: blur(30px);
+  opacity: 0.35;
+}
+
+.space-nebula--one {
+  top: -20vmax;
+  left: -10vmax;
+  background: radial-gradient(circle, rgba(254, 137, 5, 0.35), transparent 60%);
+}
+
+.space-nebula--two {
+  bottom: -25vmax;
+  right: -15vmax;
+  background: radial-gradient(circle, rgba(123, 92, 255, 0.35), transparent 60%);
+}
+
+.space-planet {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.08) 45%, transparent 70%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.08);
+  opacity: 0.3;
+}
+
+.space-planet--one {
+  width: 140px;
+  height: 140px;
+  right: 6%;
+  top: 10%;
+}
+
+.space-planet--two {
+  width: 96px;
+  height: 96px;
+  left: 8%;
+  bottom: 12%;
+}
+
+.space-star {
+  position: absolute;
+  top: var(--top);
+  left: var(--left);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 9999px;
+  background: white;
+  opacity: var(--opacity);
+  animation: starTwinkle var(--duration) ease-in-out infinite;
+  animation-delay: var(--delay);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes starTwinkle {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(0.9);
+  }
+}
+
+.space-comet {
+  position: absolute;
+  top: var(--top);
+  left: var(--left);
+  width: var(--size);
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.9), transparent);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+  opacity: 0;
+  transform: rotate(var(--angle));
+  animation: cometFly var(--duration) linear infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes cometFly {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) rotate(var(--angle));
+  }
+  15% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--travel-x), var(--travel-y), 0) rotate(var(--angle));
+  }
+}
+
+.space-constellation {
+  position: absolute;
+  left: var(--left);
+  top: var(--top);
+  width: 180px;
+  height: 120px;
+  opacity: 0.5;
+  transform: translate(-50%, -50%) translate3d(0, 0, 0) scale(var(--scale)) rotate(var(--rotation));
+}
+
+.space-constellation__line {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.35);
+  stroke-width: 0.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
+}
+
+.space-constellation__star {
+  fill: rgba(255, 255, 255, 0.95);
+  opacity: 0.9;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.6));
+}
+
+.animated-bg.gsap-active .space-constellation {
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .space-star,
+  .space-comet,
+  .space-constellation {
+    animation: none;
+  }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

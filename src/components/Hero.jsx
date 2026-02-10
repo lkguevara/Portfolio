@@ -111,6 +111,9 @@ const Hero = () => {
               className="text-2xl md:text-5xl font-bold mb-6 text-orange"
             >
               Frontend Developer
+              <span className="block text-base md:text-2xl font-semibold text-white/70 mt-2">
+                AI-Integrated Interfaces
+              </span>
             </motion.h2>
 
             <motion.p
@@ -119,7 +122,11 @@ const Hero = () => {
               transition={{ delay: 0.3 }}
               className="text-gray-300 mb-8 leading-relaxed text-lg"
             >
-            Creando soluciones web modernas desde Colombia 🇨🇴. Con más de 2 años de experiencia en desarrollo frontend, me especializo en crear interfaces rápidas y eficientes. <br/> Apasionada por la tecnología y el medio ambiente 🌿
+              Frontend Developer especializada en React y JavaScript, enfocada en crear
+              interfaces escalables y experiencias claras. He trabajado en PWAs y productos
+              digitales que integran APIs de Inteligencia Artificial para ofrecer experiencias
+              personalizadas y dinamicas. Actualmente fortalezco TypeScript y IA aplicada al
+              frontend.
             </motion.p>
 
             <motion.div
@@ -257,14 +264,14 @@ const Hero = () => {
                     <span className="text-white font-semibold">
                       Frontend Developer
                     </span>{" "}
-                    con experiencia en el desarrollo de interfaces web
-                    responsivas y centradas en el usuario. Manejo sólido de{" "}
+                    con experiencia en interfaces web escalables, PWAs y
+                    productos digitales. Manejo solido de{" "}
                     <span className="text-orange font-semibold">
                       JavaScript, React, Redux Toolkit, Zustand y Tailwind CSS
                     </span>
-                    , además de experiencia en consumo de APIs REST y
-                    conocimientos básicos en Node.js, Express, PostgreSQL y
-                    MongoDB.
+                    , integracion de APIs REST y colaboracion con equipos
+                    backend para llevar funcionalidades complejas a experiencias
+                    simples para el usuario final.
                   </p>
 
                   <div className="flex items-start gap-2 p-3 bg-white/5 rounded-lg border-l-4 border-orange">
@@ -282,15 +289,16 @@ const Hero = () => {
                       />
                     </svg>
                     <p className="text-xs">
-                      Actualmente iniciando el aprendizaje de{" "}
+                      En este momento profundizo en{" "}
                       <span className="text-orange font-semibold">
-                        TypeScript, Next.js,
+                        TypeScript
                       </span>{" "}
-                      y un plan de estudios en{" "}
+                      e{" "}
                       <span className="text-orange font-semibold">
-                        Inteligencia Artificial
-                      </span>{" "}
-                      aplicada al desarrollo web.
+                        IA aplicada al frontend
+                      </span>
+                      , con interes en construir productos inteligentes con
+                      gran experiencia de usuario.
                     </p>
                   </div>
                 </div>
@@ -308,7 +316,7 @@ const Hero = () => {
         className="hidden md:flex md:absolute bottom-12 left-1/2 -translate-x-1/2 cursor-pointer z-20"
         onClick={() =>
           document
-            .getElementById("skills")
+            .getElementById("proyectos")
             ?.scrollIntoView({ behavior: "smooth" })
         }
       >

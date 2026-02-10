@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import logoLK from "../assets/logo-lk.png";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const navItems = ["Habilidades", "Proyectos", "Contacto"];
+  const navItems = ["Proyectos", "Habilidades", "Experiencia", "Servicios", "Contacto"];
 
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -11,15 +12,19 @@ const Nav = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 shadow-lg bg-dark border-b border-orange/20">
+    <nav className="fixed top-0 w-full z-50 shadow-lg bg-[#15131c]/80 backdrop-blur-lg border-b border-white/10">
       <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="text-2xl font-bold"
+          className="flex items-center"
         >
-          <span className="text-orange">L</span>
-          <span className="text-purple">K</span>
+          <img
+            src={logoLK}
+            alt="Logo LK"
+            className="w-12 h-12 object-contain"
+            loading="eager"
+          />
         </motion.div>
 
         {/* Desktop Menu */}
@@ -76,7 +81,7 @@ const Nav = () => {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-purple/20 border-t border-orange"
+          className="md:hidden bg-[#15131c]/95 border-t border-white/10"
         >
           {navItems.map((item) => (
             <button

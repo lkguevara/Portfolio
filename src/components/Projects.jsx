@@ -14,7 +14,13 @@ const Projects = () => {
   const projects = [
     {
       title: "Adaptilearn",
+      summary: "Plataforma de aprendizaje adaptativo con roadmaps interactivos y progreso persistente.",
       desc: "Plataforma web de aprendizaje adaptativo enfocada en la creación y gestión de roadmaps de estudio personalizados. Combina visualización interactiva tipo grafo con persistencia de progreso y una arquitectura backend preparada para integrar tutores de IA. Incluye roadmaps públicos y privados, autenticación segura y control de acceso por usuario.",
+      highlights: [
+        "Roadmaps tipo grafo con React Flow.",
+        "Autenticación segura y control de acceso.",
+        "Backend preparado para IA educativa.",
+      ],
       tech: ["React", "React Flow", "Tailwind", "Zustand", "Node.js", "Express", "MongoDB", "JWT (Cookies)"],
       image: adaptilearnImg,
       // url: "https://adaptilearn.app",
@@ -24,7 +30,13 @@ const Projects = () => {
     },
     {
       title: "unipuzzlelatam",
+      summary: "PWA con IA para orientar estudiantes y respuestas en streaming.",
       desc: "Progressive Web App (PWA) que permite a los estudiantes explorar opciones académicas y recibir información personalizada de universidades mediante una interfaz interactiva potenciada por Inteligencia Artificial. Consumo de API con respuestas en streaming para una experiencia conversacional fluida.",
+      highlights: [
+        "Conversaciones en tiempo real con streaming.",
+        "UX enfocada en estudiantes y decisiones rápidas.",
+        "Arquitectura lista para escalar campañas.",
+      ],
       tech: ["React", "Tailwind", "Zustand", "OpenAI API", "Fetch API"],
       image: unipuzzleImg,
       url: "https://unipuzzlelatam.com/",
@@ -33,7 +45,13 @@ const Projects = () => {
     },
     {
       title: "Perlaswimwear",
+      summary: "E-commerce con catálogo dinámico y administración vía Strapi.",
       desc: "E-commerce de trajes de baño con Strapi CMS. Catálogo dinámico, carrito de compras y panel de administración.",
+      highlights: [
+        "CMS para gestión de productos y contenido.",
+        "Carrito optimizado para conversiones.",
+        "Diseño responsive orientado a marca.",
+      ],
       tech: ["React", "Tailwind", "Redux", "Strapi"],
       image: perlaImg,
       url: "https://perlaswimwear.vercel.app",
@@ -42,7 +60,13 @@ const Projects = () => {
     },
     {
       title: "Moviflix",
+      summary: "App de películas con búsqueda en tiempo real y detalles completos.",
       desc: "Aplicación de películas consumiendo API externa. Búsqueda en tiempo real y detalles completos de películas.",
+      highlights: [
+        "Búsqueda instantánea y navegación fluida.",
+        "Consumo eficiente de API REST.",
+        "Interfaz limpia y responsive.",
+      ],
       tech: ["React", "API REST"],
       image: moviflixImg,
       url: "https://movie-flix0.vercel.app",
@@ -51,17 +75,14 @@ const Projects = () => {
       color: "from-purple/20 to-blue-500/20",
     },
     {
-      title: "Rick And Morty",
-      desc: "App con gestión de estado usando Redux. Filtros avanzados y favoritos persistentes en localStorage.",
-      tech: ["React", "Redux", "Node.js", "Express", "Axios"],
-      image: rickAndMortyImg,
-      github: "https://github.com/lkguevara/rick-and-morty",
-      category: "Web App",
-      color: "from-green-500/20 to-cyan-500/20",
-    },
-    {
-      title: "Resolución de problemas de codificiación.",
-      desc: "Resolución de problemas de codificiación.",
+      title: "Resolución de problemas de codificación",
+      summary: "Colección de retos de algoritmos para práctica constante.",
+      desc: "Resolución de problemas de codificación con foco en lógica, claridad y buenas prácticas.",
+      highlights: [
+        "Práctica continua de algoritmos.",
+        "Soluciones claras y documentadas.",
+        "Base sólida de fundamentos.",
+      ],
       tech: ["JavaScript", "HTML", "CSS"],
       image: codingChallengesImg,
       github: "https://github.com/lkguevara/coding-challenges",
@@ -102,21 +123,31 @@ const Projects = () => {
           </div>
 
           {/* Screenshot */}
-          <div className="relative aspect-video overflow-hidden">
+          <div className="relative aspect-video overflow-hidden z-0">
             <img
               src={project.image}
               alt={project.title}
               className="w-full h-full object-cover object-top"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent pointer-events-none" />
           </div>
 
           {/* Project Info */}
-          <div className="p-4">
+          <div className="relative z-10 p-4">
             {project.desc && (
               <p className="text-gray-300 text-sm mb-4 leading-relaxed">
                 {project.desc}
               </p>
+            )}
+            {project.highlights && (
+              <div className="grid gap-2 mb-4 text-xs text-white/70">
+                {project.highlights.map((item) => (
+                  <div key={item} className="flex items-start gap-2">
+                    <span className="mt-1 h-2 w-2 rounded-full bg-orange" />
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
             )}
 
             {/* Action Buttons */}
@@ -226,6 +257,9 @@ const Projects = () => {
                     >
                       {project.title}
                     </h3>
+                    <p className="text-xs text-white/60 mt-2 leading-relaxed">
+                      {project.summary}
+                    </p>
                     <div className="flex flex-wrap gap-2 mt-3">
                       {project.tech.map((tech) => (
                         <span
@@ -351,7 +385,7 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <div
-              className={`sticky top-24 rounded-3xl overflow-hidden bg-gradient-to-br ${projects[activeProject]?.color || projects[0].color} p-1`}
+              className={` rounded-3xl overflow-hidden bg-gradient-to-br ${projects[activeProject]?.color || projects[0].color} p-1`}
             >
               <div className="bg-dark rounded-3xl overflow-hidden">
                 {/* Browser mockup header */}
@@ -374,14 +408,14 @@ const Projects = () => {
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.3 }}
-                  className="relative aspect-[16/10] overflow-hidden"
+                  className="relative aspect-16/10 overflow-hidden z-0"
                 >
                   <img
                     src={projects[activeProject]?.image || projects[0].image}
                     alt={projects[activeProject]?.title || projects[0].title}
                     className="w-full h-full object-cover object-top"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-dark/80 via-transparent to-transparent pointer-events-none" />
                 </motion.div>
 
                 {/* Project Info */}
@@ -390,11 +424,21 @@ const Projects = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3, delay: 0.1 }}
-                  className="p-6"
+                  className="relative z-10 p-6"
                 >
                   <p className="text-gray-300 mb-6 leading-relaxed">
                     {projects[activeProject]?.desc || projects[0].desc}
                   </p>
+                  {projects[activeProject]?.highlights && (
+                    <div className="grid gap-2 mb-6 text-sm text-white/70">
+                      {projects[activeProject].highlights.map((item) => (
+                        <div key={item} className="flex items-start gap-2">
+                          <span className="mt-1 h-2 w-2 rounded-full bg-orange" />
+                          <span>{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
 
                   {/* Action Buttons */}
                   <div className="flex gap-4">

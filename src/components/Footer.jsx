@@ -88,7 +88,7 @@ const Footer = () => {
             {/* Bottom bar */}
             <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-center items-center gap-4">
             <p className="text-gray-500 text-sm">
-                © 2024 Lian Guevara. Diseñado y desarrollado con 💜
+                © 2026 Lian Guevara. Diseñado y desarrollado con 💜
             </p>
             </div>
         </div>

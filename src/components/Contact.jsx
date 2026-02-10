@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 const Contact = () => (
   <section id="contacto" className="relative">
     {/* Main Contact Section */}
-    <div className="py-8 md:py-20 px-6 bg-linear-to-b from-dark via-dark to-[#1a1a1a]">
+    <div className="py-8 md:py-20 px-6 bg-linear-to-b from-[#14121b] via-[#100e16] to-[#0a0810]">
       <div className="max-w-4xl mx-auto text-center">
         {/* Decorative elements */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-orange/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-40 right-10 w-60 h-60 bg-purple/10 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-orange/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-40 right-10 w-60 h-60 bg-purple/5 rounded-full blur-3xl" />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

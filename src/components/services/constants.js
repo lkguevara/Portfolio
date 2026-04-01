@@ -5,49 +5,59 @@ export const PROJECT_TYPES = [
     description:
       "Ideal para presencia online con narrativa clara, performance y diseño que convierta.",
     tags: ["Diseño responsive", "Animaciones suaves", "SEO base"],
-    base: 600000,
+    base: 850000,
     includedPages: 1,
-    perPage: 120000,
+    perPage: 200000,
   },
   {
     id: "portfolio",
     label: "Portafolio personal",
     description:
-      "Muestra tu marca personal con secciones claras y un mensaje directo.",
-    tags: ["Branding", "Secciones clave", "CTA visible"],
-    base: 800000,
-    includedPages: 3,
-    perPage: 100000,
+      "Muestra tu marca personal con páginas claras y un mensaje directo.",
+    tags: ["Branding", "Páginas clave", "CTA visible"],
+    base: 750000,
+    includedPages: 1,
+    perPage: 150000,
   },
   {
     id: "corporate",
     label: "Sitio corporativo",
     description:
       "Web profesional para empresas, con credibilidad y estructura clara.",
-    tags: ["SEO", "Performance", "Secciones informativas"],
-    base: 900000,
-    includedPages: 4,
-    perPage: 110000,
+    tags: ["SEO", "Performance", "Páginas informativas"],
+    base: 1500000,
+    includedPages: 3,
+    perPage: 250000,
   },
   {
     id: "webapp",
     label: "Web App",
     description:
-      "Interfaces con datos reales, flujos CRUD y estados bien gestionados.",
+      "Aplicaciones web interactivas con funcionalidades personalizadas",
     tags: ["React + Tailwind", "APIs REST", "Auth"],
-    base: 1200000,
+    base: 2000000,
     includedPages: 3,
-    perPage: 120000,
+    perPage: 250000,
+  },
+  {
+    id: "webapp-backend",
+    label: "Web App + Servidor/Backend",
+    description:
+      "Aplicaciones web completas con frontend, servidor/API y base de datos.",
+    tags: ["React + Tailwind", "Node API", "DB + Auth"],
+    base: 3000000,
+    includedPages: 3,
+    perPage: 250000,
   },
   {
     id: "dashboard",
     label: "Dashboard",
     description:
-      "Paneles con data en tiempo real y visualización clara.",
-    tags: ["KPI", "Filtros", "UX para equipos"],
-    base: 1800000,
-    includedPages: 3,
-    perPage: 110000,
+      "Paneles con data y visualización clara.",
+    tags: ["Gráficos", "Filtros", "Exportación de datos"],
+    base: 2200000,
+    includedPages: 2,
+    perPage: 250000,
   },
   {
     id: "ecommerce",
@@ -55,9 +65,9 @@ export const PROJECT_TYPES = [
     description:
       "Tiendas online escalables con catálogo dinámico y panel administrativo.",
     tags: ["Pagos", "CMS", "Optimización"],
-    base: 3200000,
+    base: 2500000,
     includedPages: 3,
-    perPage: 140000,
+    perPage: 250000,
   },
   {
     id: "other",
@@ -65,9 +75,9 @@ export const PROJECT_TYPES = [
     description:
       "Proyecto a la medida según tu necesidad.",
     tags: ["Descubrimiento", "Alcance", "Plan"],
-    base: 1500000,
+    base: 3000000,
     includedPages: 3,
-    perPage: 120000,
+    perPage: 250000,
   },
 ];
 
@@ -82,19 +92,19 @@ export const STACK_OPTIONS = [
     id: "next",
     label: "Next.js",
     description: "Ideal para SEO, rendimiento y escalabilidad.",
-    cost: 200000,
+    cost: 800000,
   },
   {
     id: "astro",
     label: "Astro",
     description: "Ultra rapido para sitios con mucho contenido.",
-    cost: 150000,
+    cost: 300000,
   },
   {
     id: "react-node",
     label: "React + Node API",
     description: "Apps con backend propio y flujos complejos.",
-    cost: 350000,
+    cost: 650000,
   },
   {
     id: "shopify",
@@ -117,14 +127,14 @@ export const STACK_OPTIONS = [
 ];
 
 export const FUNCTION_OPTIONS = [
-  { id: "design", label: "Diseno UI/UX", cost: 300000 },
-  { id: "cms", label: "CMS autogestionable", cost: 350000 },
-  { id: "payments", label: "Pasarela de pagos", cost: 500000 },
-  { id: "auth", label: "Autenticacion", cost: 350000 },
-  { id: "dashboard", label: "Dashboard / Admin", cost: 450000 },
-  { id: "integrations", label: "Integraciones externas", cost: 400000 },
-  { id: "analytics", label: "Analiticas", cost: 150000 },
-  { id: "ai", label: "Integracion IA", cost: 550000 },
+  { id: "design", label: "Diseno UI/UX", cost: 600000 },
+  { id: "cms", label: "CMS autogestionable", cost: 650000 },
+  { id: "payments", label: "Pasarela de pagos", cost: 900000 },
+  { id: "auth", label: "Autenticacion", cost: 850000 },
+  { id: "dashboard", label: "Dashboard / Admin", cost: 650000 },
+  { id: "integrations", label: "Integraciones externas", cost: 900000 },
+  { id: "analytics", label: "Analiticas", cost: 1000000 },
+  { id: "ai", label: "Integracion IA", cost: 1550000 },
 ];
 
 export const DELIVERABLES = [

@@ -125,7 +125,7 @@ const Services = () => {
     try {
       const message = [
         `Tipo: ${projectTypeLabel}`,
-        `Secciones: ${totalSections} (${includedSections} incluidas + ${extraSections} adicionales)`,
+        `Páginas: ${totalSections} (${includedSections} incluidas + ${extraSections} adicionales)`,
         `Stack: ${stackLabel}`,
         `Funciones: ${functionsLabelText}`,
         `Rango estimado: ${estimateRange}`,

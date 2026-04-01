@@ -43,7 +43,7 @@ const ServicesForm = ({
         <h3 className="text-2xl font-bold text-white">Cotizacion por correo</h3>
       </div>
       <p className="text-sm text-white/70 mb-6">
-        Elige el tipo de proyecto, el stack y las funciones que necesitas. Te envio un rango estimado directo a tu correo.
+        Elige el tipo de proyecto, el stack y las funciones que necesitas. Te envio un rango estimado directo a tu correo. Recuerda que es solo un estimado basado en las opciones seleccionadas, el precio final puede variar según los detalles específicos de tu proyecto.
       </p>
 
       <div className="space-y-5">
@@ -72,16 +72,16 @@ const ServicesForm = ({
         </div>
 
         <div>
-          <div className="flex items-center justify-between">
-            <label className="text-sm text-white/70">Secciones incluidas</label>
+          <div className="flex items-center gap-2">
+            <label className="text-sm text-white/70">Páginas incluidas</label>
             <span className="text-xs text-orange">{includedSections}</span>
           </div>
           <p className="text-xs text-white/50 mt-1">
-            Cada sección adicional: {currency} {formatMoney(perPage)}
+            Cada página adicional: {currency} {formatMoney(perPage)}
           </p>
           <div className="mt-4">
-            <div className="flex items-center justify-between">
-              <label className="text-sm text-white/70">Secciones adicionales</label>
+            <div className="flex items-center gap-2">
+              <label className="text-sm text-white/70">Páginas adicionales</label>
               <span className="text-xs text-orange">{extraSections}</span>
             </div>
             <input
@@ -95,7 +95,7 @@ const ServicesForm = ({
             />
           </div>
           <p className="text-xs text-white/50 mt-2">
-            Total estimado: {totalSections} secciones
+            Total estimado: {totalSections} páginas
           </p>
         </div>
 

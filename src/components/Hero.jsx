@@ -112,7 +112,7 @@ const Hero = () => {
             >
               Frontend Developer
               <span className="block text-base md:text-2xl font-semibold text-white/70 mt-2">
-                AI-Integrated Interfaces
+                AI-Integrated Web Applications
               </span>
             </motion.h2>
 
@@ -122,11 +122,7 @@ const Hero = () => {
               transition={{ delay: 0.3 }}
               className="text-gray-300 mb-8 leading-relaxed text-lg"
             >
-              Frontend Developer especializada en React y JavaScript, enfocada en crear
-              interfaces escalables y experiencias claras. He trabajado en PWAs y productos
-              digitales que integran APIs de Inteligencia Artificial para ofrecer experiencias
-              personalizadas y dinamicas. Actualmente fortalezco TypeScript y IA aplicada al
-              frontend.
+              Frontend Developer enfocada en crear aplicaciones web modernas, escalables y centradas en la experiencia del usuario. He desarrollado portales corporativos, PWAs y productos que integran Inteligencia Artificial mediante APIs para ofrecer funcionalidades más dinámicas e intuitivas.
             </motion.p>
 
             <motion.div
@@ -152,7 +148,7 @@ const Hero = () => {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                ¡ Escríbeme !
+                ¡ Hablemos !
               </a>
 
               <a
@@ -243,7 +239,7 @@ const Hero = () => {
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-3 bg-orange rounded-xl">
                     <svg
-                      className="w-6 h-6 text-white"
+                      className="w-5 h-5 text-white shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -252,54 +248,81 @@ const Hero = () => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
                       />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-black text-orange">Sobre mí</h3>
+                  <h3 className="text-2xl font-black text-orange">Más allá del código</h3>
                 </div>
 
                 <div className="space-y-4 text-gray-300 leading-relaxed text-sm">
                   <p>
-                    <span className="text-white font-semibold">
-                      Frontend Developer
-                    </span>{" "}
-                    con experiencia en interfaces web escalables, PWAs y
-                    productos digitales. Manejo solido de{" "}
-                    <span className="text-orange font-semibold">
-                      JavaScript, React, Redux Toolkit, Zustand y Tailwind CSS
+                    <span className="text-white">
+                      Disfruto convertir ideas en productos que las personas realmente quieran usar. Creo que una buena aplicación no solo debe funcionar correctamente; también debe ser intuitiva, rápida y fácil de entender. Por eso me gusta combinar desarrollo frontend con aprendizaje constante y explorar cómo la Inteligencia Artificial puede aportar valor real a la experiencia del usuario.
                     </span>
-                    , integracion de APIs REST y colaboracion con equipos
-                    backend para llevar funcionalidades complejas a experiencias
-                    simples para el usuario final.
                   </p>
 
-                  <div className="flex items-start gap-2 p-3 bg-white/5 rounded-lg border-l-4 border-orange">
-                    <svg
-                      className="w-5 h-5 text-orange mt-0.5 shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+                  <div className="flex flex-wrap gap-2.5 mt-4">
+                    {/* Badge: Ubicación */}
+                    <motion.div
+                      className="group relative px-3.5 py-2 rounded-full bg-gradient-to-r from-orange-500/20 to-orange-600/5 border border-orange-500/25 flex items-center gap-2 cursor-default overflow-hidden shadow-lg shadow-orange-500/5"
+                      whileHover={{
+                        scale: 1.08,
+                        borderColor: "rgba(254, 137, 5, 0.6)",
+                        boxShadow: "0 0 20px rgba(254, 137, 5, 0.3)",
+                      }}
+                      animate={{ y: [0, -4, 0] }}
+                      transition={{
+                        y: { duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0 },
+                      }}
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M13 10V3L4 14h7v7l9-11h-7z"
-                      />
-                    </svg>
-                    <p className="text-xs">
-                      En este momento profundizo en{" "}
-                      <span className="text-orange font-semibold">
-                        TypeScript
-                      </span>{" "}
-                      e{" "}
-                      <span className="text-orange font-semibold">
-                        IA aplicada al frontend
-                      </span>
-                      , con interes en construir productos inteligentes con
-                      gran experiencia de usuario.
-                    </p>
+                      <div className="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/10 to-orange-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      <svg className="w-3.5 h-3.5 text-orange shrink-0 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      <span className="text-xs font-medium text-orange-200/90 group-hover:text-orange-200 transition-colors relative z-10">Bogotá, Colombia</span>
+                    </motion.div>
+
+                    {/* Badge: Remoto */}
+                    <motion.div
+                      className="group relative px-3.5 py-2 rounded-full bg-gradient-to-r from-sky-500/20 to-blue-500/5 border border-sky-500/25 flex items-center gap-2 cursor-default overflow-hidden shadow-lg shadow-sky-500/5"
+                      whileHover={{
+                        scale: 1.08,
+                        borderColor: "rgba(14, 165, 233, 0.6)",
+                        boxShadow: "0 0 20px rgba(14, 165, 233, 0.3)",
+                      }}
+                      animate={{ y: [0, -4, 0] }}
+                      transition={{
+                        y: { duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.6 },
+                      }}
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-sky-500/0 via-sky-500/10 to-sky-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      <svg className="w-3.5 h-3.5 text-sky-400 shrink-0 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span className="text-xs font-medium text-sky-300/90 group-hover:text-sky-200 transition-colors relative z-10">Disponible para remoto</span>
+                    </motion.div>
+
+                    {/* Badge: Stack */}
+                    <motion.div
+                      className="group relative px-3.5 py-2 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/5 border border-purple-500/25 flex items-center gap-2 cursor-default overflow-hidden shadow-lg shadow-purple-500/5"
+                      whileHover={{
+                        scale: 1.08,
+                        borderColor: "rgba(168, 85, 247, 0.6)",
+                        boxShadow: "0 0 20px rgba(168, 85, 247, 0.3)",
+                      }}
+                      animate={{ y: [0, -4, 0] }}
+                      transition={{
+                        y: { duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.9 },
+                      }}
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/10 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      <svg className="w-3.5 h-3.5 text-purple-400 shrink-0 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                      </svg>
+                      <span className="text-xs font-medium text-purple-300/90 group-hover:text-purple-200 transition-colors relative z-10">React + IA + Aprendizaje continuo</span>
+                    </motion.div>
                   </div>
                 </div>
               </div>

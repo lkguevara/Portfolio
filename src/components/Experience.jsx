@@ -134,7 +134,7 @@ const Experience = () => {
               >
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                   <div>
-                    <h4 className="text-xl font-bold text-purple">{item.title}</h4>
+                    <h4 className="text-xl font-bold text-orange">{item.title}</h4>
                     <p className="text-sm text-white/70">{item.place}</p>
                   </div>
                   <span className="text-xs uppercase tracking-[0.2em] text-white/50">

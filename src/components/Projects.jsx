@@ -13,9 +13,9 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Adaptilearn",
+      title: "Adaptilearn - Aplicación web de aprendizaje con IA",
       summary: "Plataforma de aprendizaje adaptativo con roadmaps interactivos y progreso persistente.",
-      desc: "Plataforma web de aprendizaje adaptativo enfocada en la creación y gestión de roadmaps de estudio personalizados. Combina visualización interactiva tipo grafo con persistencia de progreso y una arquitectura backend preparada para integrar tutores de IA. Incluye roadmaps públicos y privados, autenticación segura y control de acceso por usuario.",
+      desc: "Plataforma web que ayuda a los usuarios a crear rutas de aprendizaje personalizadas mediante Inteligencia Artificial. El sistema genera roadmaps dinámicos, permite hacer seguimiento del progreso y ofrece una experiencia interactiva para organizar el aprendizaje de forma visual.",
       highlights: [
         "Roadmaps tipo grafo con React Flow.",
         "Autenticación segura y control de acceso.",
